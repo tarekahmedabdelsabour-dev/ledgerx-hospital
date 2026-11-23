@@ -1,0 +1,247 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor_name",
+  "specialty",
+  "department",
+  "default_branch",
+  "cb1",
+  "employee",
+  "user",
+  "supplier",
+  "mobile",
+  "license_no",
+  "consultation_service",
+  "followup_days",
+  "active",
+  "sb2",
+  "branches",
+  "sb3",
+  "schedule",
+  "time_off",
+  "sb4",
+  "fee_rules"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor_name",
+   "fieldtype": "Data",
+   "label": "Doctor Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "specialty",
+   "fieldtype": "Link",
+   "label": "Specialty",
+   "options": "Medical Specialty",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Hospital Department"
+  },
+  {
+   "fieldname": "default_branch",
+   "fieldtype": "Link",
+   "label": "Main Branch",
+   "options": "Hospital Branch",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "description": "Links the doctor to the staff records."
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "description": "The doctor's login. Needed to alert the doctor about critical results."
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier (for payments)",
+   "options": "Supplier",
+   "description": "Doctor statements are paid through a purchase invoice to this supplier."
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "license_no",
+   "fieldtype": "Data",
+   "label": "License No."
+  },
+  {
+   "fieldname": "consultation_service",
+   "fieldtype": "Link",
+   "label": "Consultation Service",
+   "options": "Hospital Service",
+   "description": "Priced as the consultation fee of this doctor."
+  },
+  {
+   "fieldname": "followup_days",
+   "fieldtype": "Int",
+   "label": "Follow-up Window (days)",
+   "description": "Empty = the hospital setting."
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "sb2",
+   "fieldtype": "Section Break",
+   "label": "Branches"
+  },
+  {
+   "fieldname": "branches",
+   "fieldtype": "Table",
+   "label": "Works In",
+   "options": "Doctor Branch"
+  },
+  {
+   "fieldname": "sb3",
+   "fieldtype": "Section Break",
+   "label": "Weekly Schedule"
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Table",
+   "label": "Schedule",
+   "options": "Doctor Schedule"
+  },
+  {
+   "fieldname": "time_off",
+   "fieldtype": "Table",
+   "label": "Time Off",
+   "options": "Doctor Time Off"
+  },
+  {
+   "fieldname": "sb4",
+   "fieldtype": "Section Break",
+   "label": "Fees"
+  },
+  {
+   "fieldname": "fee_rules",
+   "fieldtype": "Table",
+   "label": "Fee Rules",
+   "options": "Doctor Fee Rule",
+   "description": "The most specific rule wins: a rule for the service, then for the service type, then a general rule."
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Hospital Doctor",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Hospital Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Hospital Doctor",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Nurse",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Reception",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1
+  },
+  {
+   "role": "Hospital Lab",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Radiology",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Cashier",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Insurance",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:DOC-.####",
+ "title_field": "doctor_name",
+ "icon": "fa fa-user-md",
+ "show_title_field_in_link": 1,
+ "search_fields": "specialty,mobile",
+ "allow_rename": 0
+}

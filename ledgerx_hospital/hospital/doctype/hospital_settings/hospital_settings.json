@@ -1,0 +1,254 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "price_list",
+  "service_item_group",
+  "sales_taxes_template",
+  "sb_visit",
+  "appointment_minutes",
+  "followup_days",
+  "followup_fee_pct",
+  "allow_overbooking",
+  "sb_adm",
+  "bed_cutoff_hour",
+  "bed_min_days",
+  "post_bed_charges",
+  "require_deposit",
+  "sb_or",
+  "or_buffer_minutes",
+  "preop",
+  "sb_fee",
+  "commission_basis",
+  "doctor_fee_item",
+  "doctor_expense_account",
+  "claim_writeoff_account",
+  "sb_walk",
+  "walk_in_customer",
+  "require_national_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Default Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Cash Price List",
+   "options": "Price List",
+   "description": "Prices for patients without insurance. Insurance plans can have their own price list."
+  },
+  {
+   "fieldname": "service_item_group",
+   "fieldtype": "Link",
+   "label": "Item Group for Service Items",
+   "options": "Item Group",
+   "description": "Each hospital service gets a non-stock item in this group."
+  },
+  {
+   "fieldname": "sales_taxes_template",
+   "fieldtype": "Link",
+   "label": "Sales Taxes Template",
+   "options": "Sales Taxes and Charges Template",
+   "description": "Leave empty when medical services are exempt."
+  },
+  {
+   "fieldname": "sb_visit",
+   "fieldtype": "Section Break",
+   "label": "Clinics"
+  },
+  {
+   "fieldname": "appointment_minutes",
+   "fieldtype": "Int",
+   "label": "Default Appointment Length (minutes)",
+   "default": 15
+  },
+  {
+   "fieldname": "followup_days",
+   "fieldtype": "Int",
+   "label": "Follow-up Window (days)",
+   "default": 14,
+   "description": "A repeat visit to the same doctor inside this window is a follow-up."
+  },
+  {
+   "fieldname": "followup_fee_pct",
+   "fieldtype": "Percent",
+   "label": "Follow-up Fee (% of the consultation)",
+   "default": 0,
+   "description": "0 = follow-ups are free."
+  },
+  {
+   "fieldname": "allow_overbooking",
+   "fieldtype": "Check",
+   "label": "Allow Booking a Full Slot",
+   "default": 0
+  },
+  {
+   "fieldname": "sb_adm",
+   "fieldtype": "Section Break",
+   "label": "Inpatients"
+  },
+  {
+   "fieldname": "bed_cutoff_hour",
+   "fieldtype": "Int",
+   "label": "Bed-day Cutoff Hour (0-23)",
+   "default": 12,
+   "description": "A bed-day is counted each time the stay passes this hour."
+  },
+  {
+   "fieldname": "bed_min_days",
+   "fieldtype": "Int",
+   "label": "Minimum Bed-days per Admission",
+   "default": 1
+  },
+  {
+   "fieldname": "post_bed_charges",
+   "fieldtype": "Check",
+   "label": "Post Bed Charges Automatically Every Day",
+   "default": 1
+  },
+  {
+   "fieldname": "require_deposit",
+   "fieldtype": "Check",
+   "label": "Warn When an Admission Has No Deposit",
+   "default": 0
+  },
+  {
+   "fieldname": "sb_or",
+   "fieldtype": "Section Break",
+   "label": "Surgery"
+  },
+  {
+   "fieldname": "or_buffer_minutes",
+   "fieldtype": "Int",
+   "label": "Cleaning Time Between Cases (minutes)",
+   "default": 30
+  },
+  {
+   "fieldname": "preop",
+   "fieldtype": "Table",
+   "label": "Pre-operative Checklist",
+   "options": "Preop Template Item",
+   "description": "Copied to every new surgery booking."
+  },
+  {
+   "fieldname": "sb_fee",
+   "fieldtype": "Section Break",
+   "label": "Doctor Fees"
+  },
+  {
+   "fieldname": "commission_basis",
+   "fieldtype": "Select",
+   "label": "Doctor Earns When the Bill Is",
+   "options": "Invoiced\nPaid",
+   "default": "Invoiced"
+  },
+  {
+   "fieldname": "doctor_fee_item",
+   "fieldtype": "Link",
+   "label": "Item for Doctor Payments",
+   "options": "Item",
+   "description": "A non-stock item used on the purchase invoice of a doctor statement. Created automatically."
+  },
+  {
+   "fieldname": "doctor_expense_account",
+   "fieldtype": "Link",
+   "label": "Doctor Fees Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "claim_writeoff_account",
+   "fieldtype": "Link",
+   "label": "Rejected Claims Write-off Account",
+   "options": "Account",
+   "description": "Used when you write off the part of a claim the insurer refused."
+  },
+  {
+   "fieldname": "sb_walk",
+   "fieldtype": "Section Break",
+   "label": "Patients"
+  },
+  {
+   "fieldname": "walk_in_customer",
+   "fieldtype": "Link",
+   "label": "Customer for Unidentified Patients",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "require_national_id",
+   "fieldtype": "Check",
+   "label": "Require National ID",
+   "default": 0
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Hospital Settings",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Hospital Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Doctor",
+   "read": 1
+  },
+  {
+   "role": "Hospital Nurse",
+   "read": 1
+  },
+  {
+   "role": "Hospital Reception",
+   "read": 1
+  },
+  {
+   "role": "Hospital Lab",
+   "read": 1
+  },
+  {
+   "role": "Hospital Radiology",
+   "read": 1
+  },
+  {
+   "role": "Hospital Pharmacist",
+   "read": 1
+  },
+  {
+   "role": "Hospital Cashier",
+   "read": 1
+  },
+  {
+   "role": "Hospital Insurance",
+   "read": 1
+  }
+ ],
+ "icon": "fa fa-hospital-o",
+ "issingle": 1,
+ "allow_rename": 0
+}

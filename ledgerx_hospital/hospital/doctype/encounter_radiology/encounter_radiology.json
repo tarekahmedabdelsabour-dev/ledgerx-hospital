@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "body_part",
+  "clinical_info",
+  "radiology_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Exam",
+   "options": "Hospital Service",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "body_part",
+   "fieldtype": "Data",
+   "label": "Body Part",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "clinical_info",
+   "fieldtype": "Data",
+   "label": "Clinical Information"
+  },
+  {
+   "fieldname": "radiology_order",
+   "fieldtype": "Link",
+   "label": "Radiology Order",
+   "options": "Radiology Order",
+   "read_only": 1,
+   "in_list_view": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Encounter Radiology",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [],
+ "istable": 1,
+ "editable_grid": 1,
+ "allow_rename": 0
+}

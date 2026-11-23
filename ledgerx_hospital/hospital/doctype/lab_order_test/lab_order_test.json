@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "status",
+  "sample_id",
+  "collected_on",
+  "result",
+  "charge"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Test",
+   "options": "Hospital Service",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Ordered\nSample Collected\nResulted\nVerified\nCancelled",
+   "default": "Ordered",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "collected_on",
+   "fieldtype": "Datetime",
+   "label": "Collected On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Link",
+   "label": "Result",
+   "options": "Lab Result",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "charge",
+   "fieldtype": "Link",
+   "label": "Charge",
+   "options": "Hospital Charge",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Lab Order Test",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [],
+ "istable": 1,
+ "editable_grid": 1,
+ "allow_rename": 0
+}

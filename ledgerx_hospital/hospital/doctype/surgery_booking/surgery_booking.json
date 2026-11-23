@@ -1,0 +1,322 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "patient_name",
+  "branch",
+  "admission",
+  "service",
+  "cb1",
+  "surgeon",
+  "operating_room",
+  "anesthesia_type",
+  "status",
+  "sb_t",
+  "scheduled_start",
+  "expected_minutes",
+  "scheduled_end",
+  "cb2",
+  "actual_start",
+  "actual_end",
+  "sb_team",
+  "team",
+  "sb_pre",
+  "preop",
+  "sb_c",
+  "consumables",
+  "stock_entry",
+  "sb_n",
+  "insurance_plan",
+  "approval",
+  "operation_notes",
+  "complications",
+  "procedure_charge",
+  "theatre_charge"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Hospital Patient",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1,
+   "fetch_from": "patient.patient_name"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Hospital Branch",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "admission",
+   "fieldtype": "Link",
+   "label": "Admission",
+   "options": "Inpatient Admission"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Procedure",
+   "options": "Hospital Service",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surgeon",
+   "fieldtype": "Link",
+   "label": "Surgeon",
+   "options": "Hospital Doctor",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "operating_room",
+   "fieldtype": "Link",
+   "label": "Operating Room",
+   "options": "Operating Room",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "anesthesia_type",
+   "fieldtype": "Select",
+   "label": "Anesthesia",
+   "options": "General\nSpinal\nEpidural\nLocal\nSedation\nNone",
+   "default": "General"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Booked\nPre-op Ready\nIn Progress\nCompleted\nCancelled",
+   "default": "Booked",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "sb_t",
+   "fieldtype": "Section Break",
+   "label": "Time"
+  },
+  {
+   "fieldname": "scheduled_start",
+   "fieldtype": "Datetime",
+   "label": "Scheduled Start",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "expected_minutes",
+   "fieldtype": "Int",
+   "label": "Expected Duration (minutes)",
+   "reqd": 1,
+   "default": 60
+  },
+  {
+   "fieldname": "scheduled_end",
+   "fieldtype": "Datetime",
+   "label": "Scheduled End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_start",
+   "fieldtype": "Datetime",
+   "label": "Actual Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_end",
+   "fieldtype": "Datetime",
+   "label": "Actual End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_team",
+   "fieldtype": "Section Break",
+   "label": "Team"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Table",
+   "label": "Team",
+   "options": "Surgery Team"
+  },
+  {
+   "fieldname": "sb_pre",
+   "fieldtype": "Section Break",
+   "label": "Pre-operative Checklist"
+  },
+  {
+   "fieldname": "preop",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Preop Check"
+  },
+  {
+   "fieldname": "sb_c",
+   "fieldtype": "Section Break",
+   "label": "Consumables"
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Table",
+   "label": "Consumables",
+   "options": "Surgery Consumable",
+   "description": "Issued from the operating theatre warehouse when the surgery is completed."
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_n",
+   "fieldtype": "Section Break",
+   "label": "Operation Notes"
+  },
+  {
+   "fieldname": "insurance_plan",
+   "fieldtype": "Link",
+   "label": "Insurance Plan",
+   "options": "Hospital Insurance Plan"
+  },
+  {
+   "fieldname": "approval",
+   "fieldtype": "Link",
+   "label": "Insurance Approval",
+   "options": "Insurance Approval"
+  },
+  {
+   "fieldname": "operation_notes",
+   "fieldtype": "Text Editor",
+   "label": "Operation Notes"
+  },
+  {
+   "fieldname": "complications",
+   "fieldtype": "Small Text",
+   "label": "Complications"
+  },
+  {
+   "fieldname": "procedure_charge",
+   "fieldtype": "Link",
+   "label": "Procedure Charge",
+   "options": "Hospital Charge",
+   "read_only": 1
+  },
+  {
+   "fieldname": "theatre_charge",
+   "fieldtype": "Link",
+   "label": "Theatre Time Charge",
+   "options": "Hospital Charge",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Surgery Booking",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Hospital Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Hospital Doctor",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Hospital Nurse",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Hospital Reception",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Cashier",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Insurance",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:SUR-.YYYY.-.#####",
+ "title_field": "patient_name",
+ "icon": "fa fa-scissors",
+ "track_changes": 1,
+ "allow_rename": 0
+}

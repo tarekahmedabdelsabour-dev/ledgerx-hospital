@@ -1,0 +1,298 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "unidentified",
+  "temp_name",
+  "temp_gender",
+  "approx_age",
+  "cb1",
+  "branch",
+  "arrival_time",
+  "arrival_mode",
+  "ambulance",
+  "sb_t",
+  "complaint",
+  "triage_level",
+  "triage_color",
+  "vitals",
+  "triaged_by",
+  "cb2",
+  "status",
+  "assigned_doctor",
+  "seen_at",
+  "wait_minutes",
+  "sb_c",
+  "service",
+  "insurance_plan",
+  "notes",
+  "sb_d",
+  "disposition_time",
+  "admission",
+  "charge"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Hospital Patient",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "description": "Leave empty for an unidentified patient and register later."
+  },
+  {
+   "fieldname": "unidentified",
+   "fieldtype": "Check",
+   "label": "Unidentified Patient"
+  },
+  {
+   "fieldname": "temp_name",
+   "fieldtype": "Data",
+   "label": "Temporary Name",
+   "depends_on": "unidentified"
+  },
+  {
+   "fieldname": "temp_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "depends_on": "unidentified"
+  },
+  {
+   "fieldname": "approx_age",
+   "fieldtype": "Int",
+   "label": "Approximate Age (years)",
+   "depends_on": "unidentified"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Hospital Branch",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "arrival_time",
+   "fieldtype": "Datetime",
+   "label": "Arrival",
+   "default": "Now",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "arrival_mode",
+   "fieldtype": "Select",
+   "label": "Arrived By",
+   "options": "Walk-in\nAmbulance\nReferral\nPolice\nOther",
+   "default": "Walk-in"
+  },
+  {
+   "fieldname": "ambulance",
+   "fieldtype": "Data",
+   "label": "Ambulance / Vehicle"
+  },
+  {
+   "fieldname": "sb_t",
+   "fieldtype": "Section Break",
+   "label": "Triage"
+  },
+  {
+   "fieldname": "complaint",
+   "fieldtype": "Small Text",
+   "label": "Complaint",
+   "reqd": 1
+  },
+  {
+   "fieldname": "triage_level",
+   "fieldtype": "Select",
+   "label": "Triage Level (1 = most urgent)",
+   "options": "\n1\n2\n3\n4\n5",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "triage_color",
+   "fieldtype": "Data",
+   "label": "Color",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vitals",
+   "fieldtype": "Link",
+   "label": "Vital Signs",
+   "options": "Vital Signs"
+  },
+  {
+   "fieldname": "triaged_by",
+   "fieldtype": "Link",
+   "label": "Triaged By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Waiting\nIn Treatment\nObservation\nAdmitted\nDischarged\nTransferred\nDeceased\nLeft Without Being Seen",
+   "default": "Waiting",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "assigned_doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Hospital Doctor"
+  },
+  {
+   "fieldname": "seen_at",
+   "fieldtype": "Datetime",
+   "label": "Seen By Doctor At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wait_minutes",
+   "fieldtype": "Int",
+   "label": "Wait Until Seen (minutes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_c",
+   "fieldtype": "Section Break",
+   "label": "Care"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Emergency Service",
+   "options": "Hospital Service",
+   "description": "Charged when the visit is registered (or when the patient is linked to it). Empty = nothing is charged automatically."
+  },
+  {
+   "fieldname": "insurance_plan",
+   "fieldtype": "Link",
+   "label": "Insurance Plan",
+   "options": "Hospital Insurance Plan"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "sb_d",
+   "fieldtype": "Section Break",
+   "label": "Disposition"
+  },
+  {
+   "fieldname": "disposition_time",
+   "fieldtype": "Datetime",
+   "label": "Closed At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admission",
+   "fieldtype": "Link",
+   "label": "Admission",
+   "options": "Inpatient Admission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "charge",
+   "fieldtype": "Link",
+   "label": "Charge",
+   "options": "Hospital Charge",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Emergency Visit",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Hospital Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Hospital Doctor",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Hospital Nurse",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Hospital Reception",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Hospital Cashier",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Insurance",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:ER-.YYYY.-.#####",
+ "title_field": "complaint",
+ "icon": "fa fa-ambulance",
+ "track_changes": 1,
+ "allow_rename": 0
+}

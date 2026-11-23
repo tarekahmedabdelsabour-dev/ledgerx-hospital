@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "gender",
+  "age_from",
+  "age_to",
+  "low",
+  "high",
+  "crit_low",
+  "crit_high",
+  "text_range"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "label": "Parameter",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Any\nMale\nFemale",
+   "default": "Any",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "age_from",
+   "fieldtype": "Float",
+   "label": "Age From (years)"
+  },
+  {
+   "fieldname": "age_to",
+   "fieldtype": "Float",
+   "label": "Age To (years)"
+  },
+  {
+   "fieldname": "low",
+   "fieldtype": "Float",
+   "label": "Low",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "high",
+   "fieldtype": "Float",
+   "label": "High",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "crit_low",
+   "fieldtype": "Float",
+   "label": "Critical Below"
+  },
+  {
+   "fieldname": "crit_high",
+   "fieldtype": "Float",
+   "label": "Critical Above"
+  },
+  {
+   "fieldname": "text_range",
+   "fieldtype": "Data",
+   "label": "Printed Range"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Lab Reference Range",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [],
+ "istable": 1,
+ "editable_grid": 1,
+ "allow_rename": 0
+}

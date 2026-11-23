@@ -1,0 +1,308 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "patient_name",
+  "branch",
+  "admitting_doctor",
+  "department",
+  "cb1",
+  "admission_type",
+  "admitted_on",
+  "status",
+  "bed",
+  "ward",
+  "emergency_visit",
+  "sb_c",
+  "diagnosis",
+  "expected_discharge",
+  "insurance_plan",
+  "approval",
+  "sb_b",
+  "stays",
+  "charged_days",
+  "sb_d",
+  "deposits",
+  "deposit_total",
+  "sb_dc",
+  "discharged_on",
+  "discharge_type",
+  "discharge_summary"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Hospital Patient",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1,
+   "fetch_from": "patient.patient_name"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Hospital Branch",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "admitting_doctor",
+   "fieldtype": "Link",
+   "label": "Admitting Doctor",
+   "options": "Hospital Doctor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Hospital Department"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "admission_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Elective\nEmergency\nTransfer\nDay Case\nMaternity",
+   "default": "Elective"
+  },
+  {
+   "fieldname": "admitted_on",
+   "fieldtype": "Datetime",
+   "label": "Admitted On",
+   "reqd": 1,
+   "default": "Now",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Admitted\nDischarged\nCancelled",
+   "default": "Admitted",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "bed",
+   "fieldtype": "Link",
+   "label": "Current Bed",
+   "options": "Hospital Bed",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward",
+   "read_only": 1,
+   "fetch_from": "bed.ward"
+  },
+  {
+   "fieldname": "emergency_visit",
+   "fieldtype": "Link",
+   "label": "From Emergency Visit",
+   "options": "Emergency Visit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_c",
+   "fieldtype": "Section Break",
+   "label": "Clinical"
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Small Text",
+   "label": "Admission Diagnosis"
+  },
+  {
+   "fieldname": "expected_discharge",
+   "fieldtype": "Date",
+   "label": "Expected Discharge"
+  },
+  {
+   "fieldname": "insurance_plan",
+   "fieldtype": "Link",
+   "label": "Insurance Plan",
+   "options": "Hospital Insurance Plan"
+  },
+  {
+   "fieldname": "approval",
+   "fieldtype": "Link",
+   "label": "Insurance Approval",
+   "options": "Insurance Approval"
+  },
+  {
+   "fieldname": "sb_b",
+   "fieldtype": "Section Break",
+   "label": "Beds and Charges"
+  },
+  {
+   "fieldname": "stays",
+   "fieldtype": "Table",
+   "label": "Bed History",
+   "options": "Bed Stay"
+  },
+  {
+   "fieldname": "charged_days",
+   "fieldtype": "Int",
+   "label": "Bed-days Posted",
+   "read_only": 1,
+   "default": 0
+  },
+  {
+   "fieldname": "sb_d",
+   "fieldtype": "Section Break",
+   "label": "Deposits"
+  },
+  {
+   "fieldname": "deposits",
+   "fieldtype": "Table",
+   "label": "Deposits",
+   "options": "Admission Deposit"
+  },
+  {
+   "fieldname": "deposit_total",
+   "fieldtype": "Currency",
+   "label": "Deposits Received",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_dc",
+   "fieldtype": "Section Break",
+   "label": "Discharge"
+  },
+  {
+   "fieldname": "discharged_on",
+   "fieldtype": "Datetime",
+   "label": "Discharged On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discharge_type",
+   "fieldtype": "Select",
+   "label": "Discharge Type",
+   "options": "\nRecovered\nImproved\nReferred\nAgainst Medical Advice\nDeceased"
+  },
+  {
+   "fieldname": "discharge_summary",
+   "fieldtype": "Text Editor",
+   "label": "Discharge Summary"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Inpatient Admission",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Hospital Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Hospital Doctor",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Hospital Nurse",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Hospital Reception",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Hospital Lab",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Radiology",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Pharmacist",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Cashier",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1
+  },
+  {
+   "role": "Hospital Insurance",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "autoname": "format:ADM-.YYYY.-.#####",
+ "title_field": "patient_name",
+ "icon": "fa fa-hospital-o",
+ "track_changes": 1,
+ "allow_rename": 0
+}

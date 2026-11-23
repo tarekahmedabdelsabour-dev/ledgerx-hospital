@@ -1,5 +1,5 @@
 """Appointment slots from a doctor's schedule. Pure functions over plain values."""
-from datetime import date, datetime, time, timedelta
+from datetime import time, timedelta
 
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 

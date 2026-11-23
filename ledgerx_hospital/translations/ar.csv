@@ -1,0 +1,954 @@
+0 = follow-ups are free.,0 = المتابعات مجانية.
+14 digits. The birth date and gender are read from it.,14 رقمًا. يتم استخراج تاريخ الميلاد والنوع منه.
+"A bed becomes Occupied by admitting a patient, not by hand.",يصبح السرير مشغولًا عند تنويم مريض، وليس يدويًا.
+A bed-day is counted each time the stay passes this hour.,يُحتسب يوم سرير في كل مرة تتجاوز فيها الإقامة هذه الساعة.
+A billed charge cannot be deleted,لا يمكن حذف بند حساب تمت فوترته
+A billed charge cannot be edited. Cancel the bill first.,لا يمكن تعديل بند حساب تمت فوترته. قم بإلغاء الفاتورة أولًا.
+A case that started cannot be cancelled,لا يمكن إلغاء حالة بدأت بالفعل
+A charge needs a service or an item,يتطلب بند الحساب خدمة أو صنفًا
+A completed visit cannot be cancelled,لا يمكن إلغاء زيارة مكتملة
+A consultation that started cannot be cancelled,لا يمكن إلغاء استشارة بدأت بالفعل
+A deposit is required before admission,الدفعة المقدمة مطلوبة قبل التنويم
+A doctor appears twice in the surgical team,تكرر ظهور طبيب في الفريق الجراحي
+A group can use one company per branch or one for all and a cost center per branch.,يمكن للمجموعة استخدام شركة لكل فرع أو شركة واحدة للجميع ومركز تكلفة لكل فرع.
+A highlight against the ranges in the settings. It is not a diagnosis.,تمييز بحسب المدى المحدد في الإعدادات. وهو ليس تشخيصًا.
+A non-stock item used on the purchase invoice of a doctor statement. Created automatically.,صنف غير مخزني يُستخدم في فاتورة الشراء الخاصة بكشف حساب الطبيب. يُنشأ تلقائيًا.
+A performed study cannot be cancelled,لا يمكن إلغاء فحص تم إجراؤه
+A repeat visit to the same doctor inside this window is a follow-up.,الزيارة المتكررة لنفس الطبيب خلال هذه المدة تُعد متابعة.
+A return cannot be cancelled. Dispense the medicine again instead.,لا يمكن إلغاء المرتجع. قم بصرف الدواء مرة أخرى بدلًا من ذلك.
+"A rule for a service beats a rule for its type, which beats the default above.",القاعدة الخاصة بالخدمة تسبق القاعدة الخاصة بنوعها، وهي تسبق القاعدة الافتراضية أعلاه.
+A service of type Room. Its price is the daily rate.,خدمة من نوع غرفة. سعرها هو السعر اليومي.
+Actions,الإجراءات
+Active,نشط
+Actual End,وقت الانتهاء الفعلي
+Actual Start,وقت البدء الفعلي
+Add at least one diagnosis before completing the visit,أضف تشخيصًا واحدًا على الأقل قبل إكمال الزيارة
+Add at least one medicine,أضف دواءً واحدًا على الأقل
+Add at least one test,أضف فحصًا واحدًا على الأقل
+Address,العنوان
+Administrative,إداري
+Admission,تنويم
+Admission Deposit,دفعة مقدمة للتنويم
+Admission Diagnosis,تشخيص التنويم
+Admissions,حالات التنويم
+Admit,تنويم
+Admit to a Bed,تنويم على سرير
+Admitted,تم التنويم
+Admitted On,تاريخ التنويم
+Admitting Doctor,طبيب التنويم
+Advances Applied,الدفعات المقدمة المطبقة
+Against Medical Advice,خروج ضد النصيحة الطبية
+Age,العمر
+Age (days),العمر (بالأيام)
+Age Bucket,الفئة العمرية
+Age From (years),العمر من (سنوات)
+Age To (years),العمر إلى (سنوات)
+All,الكل
+Allergies,الحساسية
+Allergy and duplicate warnings. They are hints: the doctor decides.,تنبيهات الحساسية والتكرار. هي مجرد إرشادات والقرار للطبيب.
+Allow Booking a Full Slot,السماح بالحجز في فترة ممتلئة
+Ambulance,إسعاف
+Ambulance / Vehicle,إسعاف / مركبة
+Amended From,معدّل من
+Amount,المبلغ
+An approval covers these services. Charges for them count as approved while it is valid.,تغطي الموافقة هذه الخدمات. وتُعد بنود الحساب الخاصة بها معتمدة طالما الموافقة سارية.
+Anesthesia,التخدير
+Anesthetist,طبيب التخدير
+Annual Limit per Member,الحد السنوي لكل عضو
+Any,أي
+Appointment,موعد
+Appointments,المواعيد
+Appointments Summary,ملخص المواعيد
+Appointments Today,مواعيد اليوم
+Appointments by Status,المواعيد حسب الحالة
+Approval Document,مستند الموافقة
+Approval Service,خدمة الموافقة
+Approvals Waiting,موافقات قيد الانتظار
+Approve,اعتماد
+Approve the statement first,قم باعتماد كشف الحساب أولًا
+Approve the statement? Its fees can no longer go on another statement.,هل تريد اعتماد كشف الحساب؟ لن يمكن إدراج أتعابه في كشف حساب آخر.
+Approved,معتمد
+Approved Services,الخدمات المعتمدة
+Approved Up To,معتمد حتى
+Approximate Age (years),العمر التقريبي (سنوات)
+Arrival,الوصول
+Arrived By,وسيلة الوصول
+Assign,تعيين
+Assign Doctor,تعيين طبيب
+Assign a doctor first,قم بتعيين طبيب أولًا
+Assign the treating doctor first,قم بتعيين الطبيب المعالج أولًا
+Assistant Surgeon,مساعد الجراح
+Available,متاح
+Average (min),المتوسط (دقيقة)
+Average Wait (min),متوسط الانتظار (دقيقة)
+BMI,مؤشر كتلة الجسم
+BMI Band,فئة مؤشر كتلة الجسم
+Batches,التشغيلات
+Bed,سرير
+Bed Class,فئة السرير
+Bed History,سجل السرير
+Bed No.,رقم السرير
+Bed Occupancy,إشغال الأسرّة
+Bed Stay,إقامة على السرير
+Bed day {0} ({1}),يوم سرير {0} ({1})
+Bed {0} belongs to another branch,السرير {0} يتبع فرعًا آخر
+Bed {0} is not available ({1}),السرير {0} غير متاح ({1})
+Bed {0} is not available in this branch,السرير {0} غير متاح في هذا الفرع
+Bed-day Cutoff Hour (0-23),ساعة احتساب يوم السرير (0-23)
+Bed-days Posted,أيام السرير المرحّلة
+Beds,الأسرّة
+Beds and Charges,الأسرّة وبنود الحساب
+Bill,فاتورة مريض
+Bill Line,سطر الفاتورة
+Billed,مفوتر
+Billed Amount,المبلغ المفوتر
+Billing,الفوترة
+Billing Item,صنف الفوترة
+Bills,فواتير المرضى
+Blood,الدم
+Blood Glucose (mg/dL),سكر الدم (مجم/ديسيلتر)
+Blood Group,فصيلة الدم
+Body,الجسم
+Body Part,جزء الجسم
+Booked,محجوز
+Branch,الفرع
+Branch Comparison,مقارنة الفروع
+Branch Name,اسم الفرع
+Branches,الفروع
+By,بواسطة
+CCU,عناية القلب المركزة
+CRM Lead,عميل محتمل
+CSF,السائل الشوكي
+CT,أشعة مقطعية
+Cancel Appointment,إلغاء الموعد
+Cancel Booking,إلغاء الحجز
+Cancel Order,إلغاء الطلب
+Cancel Statement,إلغاء كشف الحساب
+Cancel the statement and release its fees?,هل تريد إلغاء كشف الحساب وتحرير أتعابه؟
+Cancel this order?,هل تريد إلغاء هذا الطلب؟
+Cancellation Reason,سبب الإلغاء
+Cancelled,ملغي
+Cancelled: {0},ملغي: {0}
+Card Expires On,تاريخ انتهاء البطاقة
+Cardiac,القلب
+Care,الرعاية
+Cases,الحالات
+Cash,نقدي
+Cash Price,السعر النقدي
+Cash Price List,قائمة الأسعار النقدية
+Charge,بند حساب
+Charge {0} is already on bill {1}. Cancel the bill first.,بند الحساب {0} مدرج بالفعل في الفاتورة {1}. قم بإلغاء الفاتورة أولًا.
+Charge {0} is no longer unbilled ({1}). Remove it from the bill.,بند الحساب {0} لم يعد غير مفوتر ({1}). قم بإزالته من الفاتورة.
+"Charged per hour of the actual case, rounded up to the half hour.",يُحتسب لكل ساعة من مدة الحالة الفعلية، مع التقريب لأعلى إلى أقرب نصف ساعة.
+Charged when the surgery is completed.,يُحتسب عند اكتمال العملية الجراحية.
+Charged when the visit is registered (or when the patient is linked to it). Empty = nothing is charged automatically.,يُحتسب عند تسجيل الزيارة (أو عند ربطها بالمريض). فارغ = لا يُحتسب شيء تلقائيًا.
+Charges,بنود الحساب
+Charges by Service Type,بنود الحساب حسب نوع الخدمة
+Check,فحص
+Check In,تسجيل حضور
+Check before dispensing,راجع قبل الصرف
+Check the patient in first,قم بتسجيل حضور المريض أولًا
+Check the prescription,راجع الوصفة الطبية
+Checked In,تم تسجيل الحضور
+Checked In At,وقت تسجيل الحضور
+Checklist,قائمة المراجعة
+Chief Complaint,الشكوى الرئيسية
+Choices (one per line),الخيارات (خيار في كل سطر)
+Choose a branch,اختر فرعًا
+Choose the admitting doctor,اختر طبيب التنويم
+Choose the appointment time,اختر وقت الموعد
+Choose the discharge type,اختر نوع الخروج
+Choose the dispense this return is against,اختر عملية الصرف التي يخصها هذا المرتجع
+"Choose the patient, or tick Unidentified and enter a temporary name",اختر المريض، أو حدد مجهول الهوية وأدخل اسمًا مؤقتًا
+Chronic Conditions,الأمراض المزمنة
+City,المدينة
+Claim,مطالبة
+Claim Line,سطر المطالبة
+Claimed,تمت المطالبة
+Claims Open,المطالبات المفتوحة
+Class,الفئة
+Cleaning,التنظيف
+Cleaning Time Between Cases (minutes),وقت التنظيف بين الحالات (دقائق)
+Clinic,عيادة
+Clinic Visits,زيارات العيادات
+Clinical,سريري
+Clinical Information,المعلومات السريرية
+Clinics,العيادات
+Close Visit,إغلاق الزيارة
+Closed At,وقت الإغلاق
+Code,الكود
+Collect Samples,تجميع العينات
+Collected On,تاريخ التجميع
+Color,اللون
+Colour,اللون
+Comments,التعليقات
+Company,الشركة
+Complaint,الشكوى
+Complete,إكمال
+Complete Surgery,إكمال العملية الجراحية
+Complete Visit,إكمال الزيارة
+"Complete the visit? Lab, radiology and procedure orders are sent and the visit is locked.",هل تريد إكمال الزيارة؟ سيتم إرسال طلبات المعمل والأشعة والإجراءات وسيتم قفل الزيارة.
+Completed,مكتمل
+Completed On,تاريخ الاكتمال
+Complications,المضاعفات
+Conflict with booking {0}: {1} is already booked at that time.,يوجد تعارض مع الحجز {0}: {1} محجوز بالفعل في هذا الوقت.
+Consultation,استشارة
+Consultation Service,خدمة الاستشارة
+Consumable row {0}: {1} is not a stock item,سطر المستهلكات {0}: {1} ليس صنفًا مخزنيًا
+Consumables,المستهلكات
+Contact,جهة الاتصال
+Container,الحاوية
+Copied to every new surgery booking.,يُنسخ إلى كل حجز عملية جراحية جديد.
+Cost Center,مركز التكلفة
+Coverage,التغطية
+Create,إنشاء
+Create Payable,إنشاء مستحق الدفع
+Create a Customer Group and a Territory first,قم بإنشاء مجموعة عملاء ومنطقة أولًا
+Created automatically: the insurer's invoices are issued to it.,يُنشأ تلقائيًا: تصدر فواتير شركة التأمين باسمه.
+Created automatically; invoices and payments use it.,يُنشأ تلقائيًا؛ وتستخدمه الفواتير والمدفوعات.
+Created automatically; the invoices use it.,يُنشأ تلقائيًا؛ وتستخدمه الفواتير.
+Credit,آجل
+Critical,حرج
+Critical Above,حرج أعلى من
+Critical Below,حرج أقل من
+Critical Finding,نتيجة حرجة
+Critical finding,نتيجة حرجة
+Critical imaging finding for {0}: {1},نتيجة أشعة حرجة للمريض {0}: {1}
+Critical lab result for {0}: {1},نتيجة معمل حرجة للمريض {0}: {1}
+Critical value: tell the doctor.,قيمة حرجة: أبلغ الطبيب.
+Current Admission,التنويم الحالي
+Current Bed,السرير الحالي
+Customer,العميل
+Customer (billing),العميل (الفوترة)
+Customer (receivable account),العميل (حساب المدينين)
+Customer for Unidentified Patients,العميل للمرضى مجهولي الهوية
+Daily Census,الحصر اليومي
+Daily Charge Service,خدمة الحساب اليومي
+Daily Rate,السعر اليومي
+Date,التاريخ
+Date and Time,التاريخ والوقت
+Date of Birth,تاريخ الميلاد
+Day,يوم
+Day Case,حالة اليوم الواحد
+Days,أيام
+Days Overdue,أيام التأخير
+Days to Pay a Claim,أيام سداد المطالبة
+Deceased,متوفى
+Deceased On,تاريخ الوفاة
+Deduction Reason,سبب الخصم
+Deductions,الخصومات
+Default Appointment Length (minutes),مدة الموعد الافتراضية (دقائق)
+Default Company,الشركة الافتراضية
+Department,القسم
+Deposit,دفعة مقدمة
+Deposits,الدفعات المقدمة
+Deposits Received,الدفعات المقدمة المستلمة
+Description,الوصف
+Diagnosis,التشخيص
+Diagnostics,التشخيصات
+Diastolic BP (mmHg),الضغط الانبساطي (ملم زئبق)
+Discharge,خروج
+Discharge Summary,ملخص الخروج
+Discharge Type,نوع الخروج
+Discharged,تم الخروج
+Discharged On,تاريخ الخروج
+Discount %,نسبة الخصم
+Discount Off Cash Prices,خصم من الأسعار النقدية
+Dispense Line,سطر الصرف
+Dispense Medicines,صرف الأدوية
+Dispense {0},صرف {0}
+Dispensed,تم الصرف
+Disposition,مآل الحالة
+Divorced,مطلق
+Doctor,الطبيب
+Doctor Branch,فرع الطبيب
+Doctor Earns When the Bill Is,يستحق الطبيب عندما تكون الفاتورة
+Doctor Fee Rule,قاعدة أتعاب الطبيب
+Doctor Fees,أتعاب الأطباء
+Doctor Fees Due,أتعاب الأطباء المستحقة
+Doctor Fees Expense Account,حساب مصروف أتعاب الأطباء
+Doctor Name,اسم الطبيب
+Doctor Round,جولة الطبيب
+Doctor Schedule,جدول الطبيب
+Doctor Statement,كشف حساب الطبيب
+Doctor Time Off,إجازة الطبيب
+Doctor fees {0} to {1},أتعاب الأطباء من {0} إلى {1}
+Doctor statements are paid through a purchase invoice to this supplier.,تُسدد كشوف حساب الأطباء عن طريق فاتورة شراء باسم هذا المورد.
+Doctor {0} is not active,الطبيب {0} غير نشط
+Doctor's Share,نصيب الطبيب
+Doctor's Share Due,نصيب الطبيب المستحق
+Doctors,الأطباء
+Documents,المستندات
+Done,تم
+Dose,الجرعة
+Draft,مسودة
+Due,مستحق
+Duration (minutes),المدة (دقائق)
+ECG,رسم القلب
+Each hospital service gets a non-stock item in this group.,تحصل كل خدمة في المستشفى على صنف غير مخزني في هذه المجموعة.
+Echo,إيكو القلب
+Elective,اختياري
+Email,البريد الإلكتروني
+Emergency,الطوارئ
+Emergency Contact,جهة اتصال للطوارئ
+Emergency Service,خدمة الطوارئ
+Emergency Visit,زيارة طوارئ
+Emergency Visits,زيارات الطوارئ
+Emergency Waiting Times,أوقات الانتظار في الطوارئ
+Emergency by Triage Level,الطوارئ حسب مستوى الفرز
+Emergency patient {0} (level {1}) is waiting past the target time,مريض الطوارئ {0} (المستوى {1}) تجاوز وقت الانتظار المستهدف
+Employee,الموظف
+Empty = every branch.,فارغ = كل الفروع.
+Empty = no limit.,فارغ = بدون حد.
+Empty = no maximum for this service.,فارغ = بدون حد أقصى لهذه الخدمة.
+Empty = the doctor's consultation service.,فارغ = خدمة استشارة الطبيب.
+Empty = the hospital setting.,فارغ = إعداد المستشفى.
+Empty = the plan's default.,فارغ = الافتراضي للخطة.
+Encounter,كشف
+Encounter Diagnosis,تشخيص الكشف
+Encounter Lab Test,تحليل معمل الكشف
+Encounter Prescription,وصفة الكشف
+Encounter Procedure,إجراء الكشف
+Encounter Radiology,أشعة الكشف
+Endoscopy,المناظير
+Enter a value for: {0},أدخل قيمة لـ: {0}
+Enter and save the result first,أدخل النتيجة واحفظها أولاً
+Enter the expected duration in minutes,أدخل المدة المتوقعة بالدقائق
+Enter the findings and the impression,أدخل النتائج والانطباع
+Enter the insurer's approval number,أدخل رقم موافقة شركة التأمين
+Enter the national ID (or the passport number for a foreigner),أدخل الرقم القومي (أو رقم جواز السفر للأجنبي)
+Enter the reason,أدخل السبب
+Enter the reason for cancelling,أدخل سبب الإلغاء
+Enter the reason the insurer gave,أدخل السبب الذي ذكرته شركة التأمين
+Epidural,إبيدورال
+Every prescribed medicine was already dispensed,تم صرف جميع الأدوية الموصوفة بالفعل
+Exam,فحص
+Examination,الفحص
+Expected Discharge,الخروج المتوقع
+Expected Duration (minutes),المدة المتوقعة (بالدقائق)
+Expired,منتهي
+Explain the deduction,اشرح سبب الخصم
+Fee,الأتعاب
+Fee Is,الأتعاب هي
+Fee Rules,قواعد الأتعاب
+Fee Service,خدمة الأتعاب
+Fee rule row {0}: a percentage cannot exceed 100,صف قاعدة الأتعاب {0}: لا يمكن أن تتجاوز النسبة المئوية 100
+Fee rule row {0}: the value cannot be negative,صف قاعدة الأتعاب {0}: لا يمكن أن تكون القيمة سالبة
+Fees,الأتعاب
+Female,أنثى
+Fill to bill one stay. Empty = every unbilled charge of the patient.,عبئ الحقل لإصدار فاتورة لإقامة واحدة. اتركه فارغاً لجميع البنود غير المفوترة للمريض.
+Findings,النتائج
+Finish the pre-op checklist first,أكمل قائمة فحص ما قبل العملية أولاً
+Fixed,ثابت
+Flag,علامة
+Floor,الدور
+Fluoroscopy,التنظير الفلوري
+Follow-up,متابعة
+Follow-up Date,تاريخ المتابعة
+Follow-up Fee (% of the consultation),أتعاب المتابعة (% من الكشف)
+Follow-up Window (days),مدة المتابعة (بالأيام)
+Follow-ups,المتابعات
+Free Slots,المواعيد المتاحة
+Frequency,التكرار
+Friday,الجمعة
+From,من
+From Emergency Visit,من زيارة طوارئ
+Front Desk,مكتب الاستقبال
+Full Name,الاسم الكامل
+Gender,النوع
+General,عام
+Get Unbilled Charges,جلب البنود غير المفوترة
+Given,تم إعطاؤه
+Given At,وقت الإعطاء
+Given By,أعطاه
+Handover,تسليم
+Has a Critical Result,به نتيجة حرجة
+Height (cm),الطول (سم)
+Held,معلق
+High,مرتفع
+History,التاريخ المرضي
+Home,الرئيسية
+Hospital Bed,سرير المستشفى
+Hospital Bill,فاتورة المستشفى
+Hospital Branch,فرع المستشفى
+Hospital Charge,بند حساب المستشفى
+Hospital Department,قسم المستشفى
+Hospital Doctor,طبيب المستشفى
+Hospital Insurance Plan,خطة التأمين للمستشفى
+Hospital Insurer,شركة التأمين للمستشفى
+Hospital Patient,مريض المستشفى
+Hospital Service,خدمة المستشفى
+Hospital Settings,إعدادات المستشفى
+Hospital bill {0},فاتورة المستشفى {0}
+Hours Used,الساعات المستخدمة
+ICD Code,رمز التصنيف الدولي للأمراض
+ICU,العناية المركزة
+IM,عضل
+IV,وريد
+Images / Study,الصور / الدراسة
+Impression,الانطباع
+Improved,تحسن
+In Consultation,في الكشف
+In Progress,قيد التنفيذ
+In Treatment,تحت العلاج
+In hospital,داخل المستشفى
+Inactive,غير نشط
+Inhaled,استنشاق
+Inpatient Admission,تنويم مريض داخلي
+Inpatient Round,جولة المرضى الداخليين
+Inpatients,المرضى الداخليون
+Instructions,التعليمات
+Insurance,التأمين
+Insurance Approval,موافقة التأمين
+Insurance Claim,مطالبة التأمين
+Insurance Company,شركة التأمين
+Insurance Plan,خطة التأمين
+Insurance Receivable,مديونية التأمين
+Insurance company {0} has no customer. Save it again.,شركة التأمين {0} ليس لها عميل. احفظها مرة أخرى.
+Insurance company {0} is not active,شركة التأمين {0} غير نشطة
+Insurance plan {0} expired on {1},خطة التأمين {0} انتهت في {1}
+Insurance plan {0} is not active,خطة التأمين {0} غير نشطة
+Insurance plan {0} starts on {1},خطة التأمين {0} تبدأ في {1}
+Insurer,شركة التأمين
+Insurer Approval No.,رقم موافقة شركة التأمين
+Insurer Invoice,فاتورة شركة التأمين
+Insurer Maximum per Line,الحد الأقصى لشركة التأمين لكل بند
+Insurer Payment,دفعة شركة التأمين
+Insurer Pays,شركة التأمين تدفع
+Insurer Pays %,نسبة تحمل التأمين
+Insurer Pays % (default),نسبة تحمل شركة التأمين % (الافتراضية)
+Invoice,فاتورة
+Invoice {0} has only {1} outstanding,الفاتورة {0} المتبقي عليها {1} فقط
+Invoiced,مفوتر
+Isolation,عزل
+Issued from the operating theatre warehouse when the surgery is completed.,يُصرف من مخزن غرفة العمليات عند اكتمال العملية الجراحية.
+Item,بند
+Item Group for Service Items,مجموعة الأصناف لأصناف الخدمات
+Item for Doctor Payments,صنف مدفوعات الأطباء
+Item {0} does not exist,الصنف {0} غير موجود
+Item {0} has no selling price. Add an Item Price in the price list.,الصنف {0} ليس له سعر بيع. أضف سعر صنف في قائمة الأسعار.
+Item {0} is disabled,الصنف {0} معطل
+Kept in the cash price list. Insurance plans use their own price list when they have one.,يُحفظ في قائمة الأسعار النقدية. تستخدم خطط التأمين قائمة أسعارها الخاصة إن وجدت.
+Lab Order,طلب معمل
+Lab Order Test,تحليل طلب المعمل
+Lab Orders,طلبات المعمل
+Lab Orders Pending,طلبات المعمل المعلقة
+Lab Reference Range,المدى المرجعي للمعمل
+Lab Result,نتيجة المعمل
+Lab Result Value,قيمة نتيجة المعمل
+Lab Test Parameter,معامل التحليل
+Lab Test Template,قالب التحليل
+Lab Turnaround,زمن إنجاز المعمل
+Laboratory,المعمل
+Laboratory Tests,تحاليل المعمل
+Late,متأخر
+Late %,المتأخر %
+Leave empty for an unidentified patient and register later.,اتركه فارغاً لمريض غير معروف الهوية وسجله لاحقاً.
+Leave empty when medical services are exempt.,اتركه فارغاً عند إعفاء الخدمات الطبية.
+Left Unseen,غادر دون كشف
+Left Without Being Seen,غادر دون أن يُكشف عليه
+Level (1 = most urgent),المستوى (1 = الأكثر إلحاحاً)
+License No.,رقم الترخيص
+Lines,البنود
+Link,ربط
+Link Patient,ربط المريض
+Links the doctor to the staff records.,يربط الطبيب بسجلات الموظفين.
+List the approved services,اذكر الخدمات المعتمدة
+Load Bills,تحميل الفواتير
+Load Fees,تحميل الأتعاب
+Local,محلي
+Longest (min),الأطول (دقيقة)
+Longest Wait (min),أطول انتظار (دقيقة)
+Low,منخفض
+MRI,رنين مغناطيسي
+Main Branch,الفرع الرئيسي
+Maintenance,صيانة
+Male,ذكر
+Mammography,تصوير الثدي بالأشعة
+Marital Status,الحالة الاجتماعية
+Mark Performed,تسجيل كمنفذ
+Mark Pre-op Ready,تسجيل الجاهزية قبل العملية
+Mark Resulted,تسجيل ظهور النتيجة
+Married,متزوج
+Maternity,الولادة
+Medical Background,الخلفية الطبية
+Medical Specialty,التخصص الطبي
+Medication Administration,إعطاء الدواء
+Medication Dispense,صرف الدواء
+Medication Dispensing,صرف الأدوية
+Medication Dose,جرعة الدواء
+Medicine,الدواء
+Medicines,الأدوية
+Medicines are dispensed from here.,يتم صرف الأدوية من هنا.
+Member No.,رقم العضوية
+Member's Annual Limit Left,المتبقي من الحد السنوي للمشترك
+Minimum Bed-days per Admission,الحد الأدنى لأيام السرير لكل تنويم
+Minor,بسيط
+Missed,فائت
+Mobile,محمول
+Modality,نوع الفحص
+Mode of Payment,طريقة الدفع
+Mode of payment {0} has no account for company {1},طريقة الدفع {0} ليس لها حساب للشركة {1}
+Monday,الاثنين
+NICU,العناية المركزة للأطفال حديثي الولادة
+Name,الاسم
+National ID,الرقم القومي
+National ID {0} already belongs to patient {1},الرقم القومي {0} مسجل بالفعل للمريض {1}
+Needs Prior Approval,تحتاج إلى موافقة مسبقة
+Needs a Doctor,تحتاج إلى طبيب
+Net Amount,صافي المبلغ
+Net Payable,صافي المستحق
+Net Quantity,صافي الكمية
+Neuro,المخ والأعصاب
+No Show,لم يحضر
+No Show %,نسبة عدم الحضور %
+No fees to settle for this doctor in the period,لا توجد أتعاب لتسويتها لهذا الطبيب في الفترة
+No free slots on this day,لا توجد مواعيد متاحة في هذا اليوم
+No unclaimed bills for this insurer in the period,لا توجد فواتير غير مطالب بها لشركة التأمين هذه في الفترة
+None,لا شيء
+Not Covered,غير مغطى
+Not due,غير مستحق
+Not enough stock in {0}: {1},المخزون غير كافي في {0}: {1}
+Not enough usable stock in {0}: {1},لا يوجد مخزون صالح كافٍ في {0}: {1}
+Not set,غير محدد
+Note,ملاحظة
+Notes,ملاحظات
+Nothing to pay,لا شيء للدفع
+Numeric,رقمي
+Nursing,التمريض
+Nursing Note,ملاحظة تمريض
+Observation,مراقبة
+Obstetric,النساء والتوليد
+Occupancy %,نسبة الإشغال %
+Occupied,مشغول
+On,مفعل
+One per line or separated by commas. Prescriptions are checked against this list.,اكتب واحداً في كل سطر أو افصل بينها بفواصل. تُراجع الوصفات الطبية وفق هذه القائمة.
+Only a draft claim can be deleted,لا يمكن حذف إلا المطالبة في حالة المسودة
+Only a draft statement can be changed this way.,لا يمكن تعديل إلا كشف الحساب في حالة المسودة بهذه الطريقة.
+Only a draft statement can be deleted. Cancel it instead.,لا يمكن حذف إلا كشف الحساب في حالة المسودة. قم بإلغائه بدلاً من ذلك.
+Only a scheduled appointment can be checked in,لا يمكن تسجيل حضور إلا لموعد مجدول
+Open,مفتوح
+Open Visit,فتح زيارة
+Operating Room,غرفة العمليات
+Operating Theatre Warehouse,مخزن غرفة العمليات
+Operation Notes,ملاحظات العملية
+Oral,فموي
+Order,الأمر
+Ordered,تم الطلب
+Ordered On,تاريخ الطلب
+Ordering Doctor,الطبيب الطالب
+Orders,الطلبات
+Orthopedic,العظام
+Other,أخرى
+Outcome,النتيجة النهائية
+Outpatient,العيادات الخارجية
+Outside Normal Range,خارج المدى الطبيعي
+Outstanding,المتبقي
+Overrides the cash price list for this branch.,يحل محل قائمة الأسعار النقدية لهذا الفرع.
+Package,باقة
+Paid,مدفوع
+Pain (0-10),الألم (0-10)
+Parameter,المعامل
+Parameters,المعاملات
+Partially Approved,موافق عليه جزئياً
+Partially Paid,مدفوع جزئياً
+Partly Paid,مدفوع جزئياً
+Passport No.,رقم جواز السفر
+Patient,المريض
+Patient Appointment,موعد المريض
+Patient Balance,رصيد المريض
+Patient Encounter,كشف المريض
+Patient Fixed Co-pay per Line,مساهمة المريض الثابتة لكل بند
+Patient Invoice,فاتورة المريض
+Patient Maximum per Bill,الحد الأقصى للمريض لكل فاتورة
+Patient Minimum per Bill (visit co-pay),الحد الأدنى للمريض لكل فاتورة (مساهمة الزيارة)
+Patient Name,اسم المريض
+Patient Pays,المريض يدفع
+Patient owes,المريض مدين بمبلغ
+Patients,المرضى
+Patients In Hospital,المرضى داخل المستشفى
+Patients in hospital,المرضى داخل المستشفى
+Patients per Slot,المرضى لكل موعد
+Payment Due,الدفع المستحق
+Payment Entry,قيد دفع
+Payments were received against invoice {0}. Cancel those payments first.,تم استلام مدفوعات على الفاتورة {0}. قم بإلغاء هذه المدفوعات أولاً.
+Pediatric,الأطفال
+"Per parameter, gender and age. The most specific range that fits the patient is used.",لكل معامل وجنس وعمر. يُستخدم أدق مدى مناسب للمريض.
+Percent,نسبة مئوية
+"Percent of the net amount, or a fixed amount per unit.",نسبة مئوية من صافي المبلغ، أو مبلغ ثابت لكل وحدة.
+Performed,منفذ
+Performed On,تاريخ التنفيذ
+Performing Doctor,الطبيب المنفذ
+Pharmacy,الصيدلية
+Pharmacy Warehouse,مخزن الصيدلية
+Phone,الهاتف
+Photo,صورة
+Pick a Free Slot,اختر موعداً متاحاً
+Plan,خطة
+Plan Rule,قاعدة الخطة
+Plasma,البلازما
+Police,الشرطة
+Possible allergy,حساسية محتملة
+Possible allergy: the patient is recorded allergic to {0}; check {1}.,حساسية محتملة: المريض مسجل لديه حساسية من {0}؛ راجع {1}.
+Possible duplicate: {0} and {1} are the same medicine or ingredient.,تكرار محتمل: {0} و{1} هما نفس الدواء أو المادة الفعالة.
+Post Bed Charges Automatically Every Day,ترحيل بنود السرير تلقائياً كل يوم
+Pre-op Ready,جاهز قبل العملية
+Pre-operative Checklist,قائمة فحص ما قبل العملية
+Preop Check,فحص ما قبل العملية
+Preop Template Item,بند قالب ما قبل العملية
+Prescriber,واصف الدواء
+Prescription,الروشتة
+Prescription Row,صف الوصفة
+Price,السعر
+Price List,قائمة الأسعار
+Priced as the consultation fee of this doctor.,يُسعَّر بسعر كشف هذا الطبيب.
+Prices for patients without insurance. Insurance plans can have their own price list.,أسعار المرضى غير المؤمن عليهم. يمكن أن يكون لخطط التأمين قائمة أسعار خاصة بها.
+Primary,أساسي
+Printed Range,المدى المطبوع
+Prior Approval Obtained,تم الحصول على موافقة مسبقة
+Priority,الأولوية
+Private,خاص
+Procedure,إجراء
+Procedure Charge,بند حساب الإجراء
+Procedures,الإجراءات
+Provisional,مبدئي
+Pulse (/min),النبض (/دقيقة)
+Purchase Invoice,فاتورة شراء
+Qty,الكمية
+Quantity,الكمية
+Quantity of {0} must be more than zero,يجب أن تكون كمية {0} أكبر من صفر
+Quantity to Dispense,الكمية المراد صرفها
+Queue No.,رقم الدور
+Radiologist,أخصائي الأشعة
+Radiology,الأشعة
+Radiology Order,طلب أشعة
+Radiology Pending,أشعة معلقة
+Readings,القراءات
+Reason,السبب
+Reason for Visit,سبب الزيارة
+Receive,استلام
+Receive Deposit,استلام دفعة مقدمة
+Receive Payment,استلام دفعة
+Record Rejection,تسجيل الرفض
+Recorded At,وقت التسجيل
+Recorded By,سجله
+Recovered,تعافى
+Recovery,الإفاقة
+Rectal,شرجي
+Reference,المرجع
+Reference Ranges,المدى المرجعي
+Referral,إحالة
+Referral / Advice,إحالة / نصيحة
+Referred,محال
+Refresh Payment Status,تحديث حالة الدفع
+Refused,مرفوض
+Register,تسجيل
+Register Payment,تسجيل دفعة
+Register the patient and link them to this visit before admitting,سجّل المريض واربطه بهذه الزيارة قبل التنويم
+Registered At,وقت التسجيل
+Rejected,مرفوض
+Rejected Amount,المبلغ المرفوض
+Rejected Claims Write-off Account,حساب شطب المطالبات المرفوضة
+Rejected by insurer on claim {0}: {1},رفضتها شركة التأمين في المطالبة {0}: {1}
+Rejection,رفض
+Relation,صلة القرابة
+Report,تقرير
+Reported,تم تقديم التقرير
+Reports,التقارير
+Request,طلب
+Requested,مطلوب
+Requested On,تاريخ الطلب
+Require National ID,اشتراط الرقم القومي
+Reserved,محجوز
+Respiratory Rate (/min),معدل التنفس (في الدقيقة)
+Result,النتيجة
+Result Type,نوع النتيجة
+Resulted,تمت النتيجة
+Resulted By,أدخل النتيجة
+Resulted On,تاريخ النتيجة
+Results,النتائج
+Return,مرتجع
+Return Against,مرتجع مقابل
+Return {0},مرتجع {0}
+Revenue Analysis,تحليل الإيرادات
+Review,مراجعة
+Role,الدور
+Room,غرفة
+Route,طريقة الاستخدام
+Routine,روتيني
+Row not found,الصف غير موجود
+Row {0}: bill {1} belongs to another branch,الصف {0}: الفاتورة {1} تابعة لفرع آخر
+Row {0}: bill {1} belongs to another insurance company,الصف {0}: الفاتورة {1} تابعة لشركة تأمين أخرى
+Row {0}: bill {1} is already on claim {2},الصف {0}: الفاتورة {1} موجودة بالفعل في المطالبة {2}
+Row {0}: bill {1} is not submitted,الصف {0}: الفاتورة {1} لم يتم اعتمادها
+Row {0}: bill {1} is on the claim twice,الصف {0}: الفاتورة {1} مكررة في المطالبة
+Row {0}: bill {1} must be submitted and have an insurer invoice,الصف {0}: يجب اعتماد الفاتورة {1} وأن تكون لها فاتورة شركة التأمين
+Row {0}: charge {1} belongs to another patient,الصف {0}: بند الحساب {1} يخص مريضًا آخر
+Row {0}: charge {1} does not exist,الصف {0}: بند الحساب {1} غير موجود
+Row {0}: charge {1} is already on bill {2},الصف {0}: بند الحساب {1} موجود بالفعل في الفاتورة {2}
+Row {0}: charge {1} is cancelled,الصف {0}: بند الحساب {1} ملغي
+Row {0}: charge {1} is on the bill twice,الصف {0}: بند الحساب {1} مكرر في الفاتورة
+Row {0}: choose a charge. Use Get Unbilled Charges to fill the bill.,الصف {0}: اختر بند حساب. استخدم جلب البنود غير المفوترة لتعبئة الفاتورة.
+Row {0}: rejected plus paid is more than the claimed amount,الصف {0}: مجموع المرفوض والمدفوع أكبر من المبلغ المطالب به
+Row {0}: the bill line no longer exists,الصف {0}: سطر الفاتورة لم يعد موجودًا
+Row {0}: the quantity must be more than zero,الصف {0}: يجب أن تكون الكمية أكبر من صفر
+Row {0}: this fee is already on statement {1},الصف {0}: هذه الأتعاب موجودة بالفعل في كشف الحساب {1}
+Row {0}: {1} appears twice,الصف {0}: {1} مكرر
+Row {0}: {1} has no Lab Test Template (parameters and reference ranges),الصف {0}: {1} ليس له قالب تحليل معملي (المعاملات والمدى المرجعي)
+Row {0}: {1} has no selling price,الصف {0}: {1} ليس له سعر بيع
+Row {0}: {1} is not a laboratory service,الصف {0}: {1} ليست خدمة معملية
+Row {0}: {1} is not an active stock item,الصف {0}: {1} ليس صنفًا مخزنيًا نشطًا
+Row {0}: {1} must be a number (for example 5.2 or <0.5),الصف {0}: يجب أن تكون {1} رقمًا (مثل 5.2 أو <0.5)
+Rows,الصفوف
+Rules,القواعد
+Rules by Service,القواعد حسب الخدمة
+STAT,عاجل فورًا
+Safety Notes,ملاحظات السلامة
+Sales Invoice,فاتورة مبيعات
+Sales Taxes Template,قالب ضريبة المبيعات
+Sample,عينة
+Sample Collected,تم سحب العينة
+Sample ID,رقم العينة
+Samples collected. Result sheets are open for the lab.,تم سحب العينات. أوراق النتائج مفتوحة للمعمل.
+Saturday,السبت
+Save,حفظ
+Save Report,حفظ التقرير
+Schedule,الجدول
+Schedule row {0}: branch {1} is not one of the doctor's branches,صف الجدول {0}: الفرع {1} ليس من فروع الطبيب
+Schedule row {0}: enter the slot length in minutes,صف الجدول {0}: أدخل مدة الفترة بالدقائق
+Schedule row {0}: the end time must be after the start time,صف الجدول {0}: يجب أن يكون وقت النهاية بعد وقت البداية
+Schedule rows {0} and {1} overlap on {2},صفا الجدول {0} و{1} متداخلان يوم {2}
+Scheduled,مجدول
+Scheduled At,موعد الجدولة
+Scheduled End,نهاية مجدولة
+Scheduled Start,بداية مجدولة
+Scrub Nurse,ممرضة التعقيم
+Secondary,ثانوي
+Sedation,تخدير مهدئ
+Seen,تمت المعاينة
+Seen By Doctor At,وقت معاينة الطبيب
+Seen Within Target %,نسبة المعاينة ضمن المستهدف %
+Select,اختيار
+Semi-private,شبه خاص
+Send Claim,إرسال المطالبة
+Send the claim first,أرسل المطالبة أولًا
+Send the claim to the insurer? The bills are locked into it.,هل تريد إرسال المطالبة إلى شركة التأمين؟ ستُقفل الفواتير فيها.
+Serum,مصل
+Service,خدمة
+Service Type,نوع الخدمة
+Service {0} does not exist,الخدمة {0} غير موجودة
+Service {0} is not active,الخدمة {0} غير نشطة
+Services,الخدمات
+Set Triage Level,تحديد مستوى الفرز
+Set a Supplier on the doctor's card to pay the fees,حدد مورّدًا في بطاقة الطبيب لدفع الأتعاب
+Set a pharmacy warehouse on branch {0},حدد مخزن الصيدلية في الفرع {0}
+Set a theatre warehouse on branch {0},حدد مخزن غرفة العمليات في الفرع {0}
+Set automatically from the service. Medicines use their own item.,تُحدد تلقائيًا من الخدمة. الأدوية تستخدم الصنف الخاص بها.
+Set the Cost of Goods Sold account (or the stock adjustment account) on company {0},حدد حساب تكلفة البضاعة المباعة (أو حساب تسوية المخزون) في الشركة {0}
+Set the doctor fee item and the expense account in Hospital Settings,حدد صنف أتعاب الطبيب وحساب المصروفات في إعدادات المستشفى
+Setup,الإعداد
+Share %,النصيب %
+Sick Leave (days),إجازة مرضية (أيام)
+Sign-off,الاعتماد
+Single,أعزب
+Slot (minutes),مدة الفترة (دقائق)
+Source,المصدر
+Source Data,بيانات المصدر
+Source Type,نوع المصدر
+SpO2 (%),تشبع الأكسجين SpO2 (%)
+Specialty,التخصص
+Spinal,نخاعي
+Sputum,بلغم
+Standard,قياسي
+Start Surgery,بدء العملية الجراحية
+Start Visit,بدء الزيارة
+Start as Emergency,البدء كحالة طوارئ
+Start without the pre-op checklist complete?,هل تريد البدء دون استكمال قائمة فحوصات ما قبل العملية؟
+Statement Row,سطر كشف الحساب
+Status,الحالة
+Still Scheduled,لا يزال مجدولًا
+Stock Entry,حركة مخزون
+Stool,براز
+Submit the bill first,اعتمد الفاتورة أولًا
+Submitted,معتمد
+Submitted On,تاريخ الاعتماد
+Sunday,الأحد
+Supplier,المورد
+Supplier (for payments),المورّد (للمدفوعات)
+Support,مساعد
+Surgeon,الجرّاح
+Surgeries,العمليات الجراحية
+Surgeries Today,عمليات اليوم
+Surgery,عملية جراحية
+Surgery Booking,حجز عملية جراحية
+Surgery Consumable,مستهلكات العملية الجراحية
+Surgery Team,فريق العملية الجراحية
+Surgery consumables are issued from here. Empty = the pharmacy warehouse.,تُصرف مستهلكات العمليات الجراحية من هنا. إذا تُرك فارغًا فمخزن الصيدلية.
+Surgery {0},عملية جراحية {0}
+Swab,مسحة
+System,النظام
+Systolic BP (mmHg),ضغط الدم الانقباضي (مم زئبق)
+Target (hours),المستهدف (ساعات)
+Target (min),المستهدف (دقائق)
+Team,الفريق
+Technician,فني
+Telemedicine,الطب عن بُعد
+Temperature (C),درجة الحرارة (°م)
+Temporary Name,اسم مؤقت
+Test,تحليل
+Test not found,التحليل غير موجود
+Test {0} already has a result. The order cannot be cancelled.,التحليل {0} له نتيجة بالفعل. لا يمكن إلغاء الطلب.
+Tests,التحاليل
+Text,نص
+The admission belongs to another patient,التنويم يخص مريضًا آخر
+The admission has charges. Cancel the admission instead of deleting it.,التنويم له بنود حساب. ألغِ التنويم بدلًا من حذفه.
+The admission has other charges. Discharge the patient instead.,التنويم له بنود حساب أخرى. اعمل خروج للمريض بدلًا من ذلك.
+The amount must be more than zero,يجب أن يكون المبلغ أكبر من صفر
+The appointment is not today,الموعد ليس اليوم
+The bed holds an admitted patient. Discharge or transfer the patient first.,السرير يشغله مريض منوَّم. اعمل خروج للمريض أو انقله أولًا.
+The bed is in use and cannot be deactivated,السرير قيد الاستخدام ولا يمكن إيقافه
+The bill has a negative total,إجمالي الفاتورة بالسالب
+The bill has a negative total. Settle the credit lines with a credit note instead.,إجمالي الفاتورة بالسالب. سوِّ السطور الدائنة بإشعار دائن بدلًا من ذلك.
+The bill has no lines. Use Get Unbilled Charges.,الفاتورة بلا سطور. استخدم جلب البنود غير المفوترة.
+The bill is on claim {0}. Remove it from the claim first.,الفاتورة ضمن المطالبة {0}. أزلها من المطالبة أولًا.
+The bill is part of doctor statement {0}. Cancel the statement first.,الفاتورة ضمن كشف حساب الطبيب {0}. ألغِ كشف الحساب أولًا.
+The booking is not waiting for pre-op checks,الحجز لا ينتظر فحوصات ما قبل العملية
+The case cannot start from status {0},لا يمكن بدء الحالة من الحالة {0}
+The case has not started,الحالة لم تبدأ
+The claim has no bills,المطالبة بلا فواتير
+The claim was already sent. Only a draft can be changed this way.,تم إرسال المطالبة بالفعل. المسودة فقط يمكن تغييرها بهذه الطريقة.
+The contract prices. Empty = the cash price list.,أسعار التعاقد. إذا تُرك فارغًا فقائمة أسعار النقدي.
+The date is in the past,التاريخ في الماضي
+The date of birth does not match the national ID.,تاريخ الميلاد لا يطابق الرقم القومي.
+The date of birth is in the future,تاريخ الميلاد في المستقبل
+The deductions are more than the doctor's share,الخصومات أكبر من نصيب الطبيب
+The default branch must be one of the doctor's branches,يجب أن يكون الفرع الافتراضي من فروع الطبيب
+The discount must be between 0 and 100,يجب أن يكون الخصم بين 0 و100
+The dispense has returns. Cancel nothing: the returns are part of its history.,لعملية الصرف مرتجعات. لا تلغِ شيئًا، فالمرتجعات جزء من سجلها.
+The doctor is not active,الطبيب غير نشط
+The doctor's login. Needed to alert the doctor about critical results.,حساب دخول الطبيب. مطلوب لتنبيه الطبيب بالنتائج الحرجة.
+The end date is before the start date,تاريخ النهاية قبل تاريخ البداية
+The end time must be after the start time,يجب أن يكون وقت النهاية بعد وقت البداية
+The insurance card has expired.,بطاقة التأمين منتهية الصلاحية.
+"The invoice total ({0}) does not match the bill ({1}). Check pricing rules and item prices, then try again.",إجمالي الفاتورة ({0}) لا يطابق الفاتورة ({1}). راجع قواعد التسعير وأسعار الأصناف ثم حاول مرة أخرى.
+"The most specific rule wins: a rule for the service, then for the service type, then a general rule.",تُطبق القاعدة الأكثر تحديدًا: قاعدة الخدمة أولًا، ثم نوع الخدمة، ثم القاعدة العامة.
+The national ID is not valid. It must be 14 digits and start with 2 or 3.,الرقم القومي غير صحيح. يجب أن يتكون من 14 رقمًا ويبدأ بـ 2 أو 3.
+The operating room belongs to another branch,غرفة العمليات تابعة لفرع آخر
+The operating room is under maintenance,غرفة العمليات تحت الصيانة
+The order cannot go from {0} to {1},لا يمكن تغيير الطلب من {0} إلى {1}
+The original dispense must be a submitted dispense of the same patient,يجب أن يكون الصرف الأصلي صرفًا معتمدًا لنفس المريض
+The patient already has an appointment at this time: {0},لدى المريض موعد في هذا الوقت بالفعل: {0}
+The patient has no unbilled charges,لا توجد بنود حساب غير مفوترة للمريض
+The patient has records in {0}. Mark the patient Inactive instead of deleting.,للمريض سجلات في {0}. اجعل المريض غير نشط بدلًا من حذفه.
+The patient is already admitted: {0},المريض منوَّم بالفعل: {0}
+The patient is already in this bed,المريض موجود بالفعل في هذا السرير
+The patient is marked deceased,المريض مسجل كمتوفى
+The patient is marked deceased.,المريض مسجل كمتوفى.
+The patient is not admitted,المريض غير منوَّم
+The patient owes {0}. Receive a deposit for more than that.,على المريض مبلغ {0}. استلم دفعة مقدمة بأكثر من ذلك.
+The payable was already created: {0},تم إنشاء المستحق بالفعل: {0}
+The payment is {0} more than the claim's open balance,الدفعة أكبر من الرصيد المفتوح للمطالبة بمقدار {0}
+"The pre-op checklist is not complete. Tick it, or start as an emergency case.",قائمة فحوصات ما قبل العملية غير مكتملة. أكملها أو ابدأ كحالة طوارئ.
+The price cannot be negative,لا يمكن أن يكون السعر بالسالب
+The quantity must be more than zero,يجب أن تكون الكمية أكبر من صفر
+The rate cannot be negative,لا يمكن أن يكون السعر بالسالب
+The rejected amount must be more than zero and not more than {0},يجب أن يكون المبلغ المرفوض أكبر من صفر ولا يزيد على {0}
+The report is verified and locked,التقرير تم التحقق منه وهو مقفل
+The result is verified and locked,النتيجة تم التحقق منها وهي مقفلة
+The result was already entered,تم إدخال النتيجة بالفعل
+The sample of this test was already collected,تم سحب عينة هذا التحليل بالفعل
+The scheduled time is in the past,الوقت المجدول في الماضي
+The service was used in charges. Untick Active instead of deleting it.,استُخدمت الخدمة في بنود الحساب. ألغِ تحديد نشط بدلًا من حذفها.
+The statement has no lines,كشف الحساب بلا سطور
+The statement is paid. Cancel the payment first.,كشف الحساب مدفوع. ألغِ الدفعة أولًا.
+The triage level is 1 to 5,مستوى الفرز من 1 إلى 5
+The visit already has a patient,الزيارة مرتبطة بمريض بالفعل
+The visit is closed ({0}),الزيارة مغلقة ({0})
+The visit is completed and locked. Create a new visit for new findings.,الزيارة مكتملة ومقفلة. أنشئ زيارة جديدة للمستجدات.
+The visit is not open,الزيارة غير مفتوحة
+The warehouse belongs to another company,المخزن تابع لشركة أخرى
+Theatre Time Charge,بند حساب وقت غرفة العمليات
+Theatre Time Service,خدمة وقت غرفة العمليات
+Theatre Utilisation,استخدام غرفة العمليات
+Theatre and Hospital,غرفة العمليات والمستشفى
+This dose was already recorded as {0},سُجلت هذه الجرعة بالفعل بحالة {0}
+This order has a critical result.,هذا الطلب به نتيجة حرجة.
+This rejection was already written off. Cancel the write-off entry first.,تم شطب هذا الرفض بالفعل. ألغِ قيد الشطب أولًا.
+This slot is already fully booked.,هذه الفترة محجوزة بالكامل.
+This time is not one of the doctor's slots (outside the schedule or on leave).,هذا الوقت ليس من فترات الطبيب (خارج الجدول أو في إجازة).
+Thursday,الخميس
+Time,الوقت
+Time Off,إجازة
+Time off row {0}: the end date is before the start date,صف الإجازة {0}: تاريخ النهاية قبل تاريخ البداية
+Tissue,نسيج
+To,إلى
+Topical,موضعي
+Total,الإجمالي
+Total due,إجمالي المستحق
+Totals,الإجماليات
+Transfer,نقل
+Transfer to Another Bed,النقل إلى سرير آخر
+Transferred,تم النقل
+Triage,الفرز
+Triage Level,مستوى الفرز
+Triage Level (1 = most urgent),مستوى الفرز (1 = الأكثر إلحاحًا)
+Triaged By,أجرى الفرز
+Tuesday,الثلاثاء
+Turnaround (hours),مدة الإنجاز (ساعات)
+Type,النوع
+Ultrasound,سونار
+Unbilled,غير مفوتر
+Unbilled Charges,بنود حساب غير مفوترة
+Unbilled amount,المبلغ غير المفوتر
+Unidentified Patient,مريض مجهول الهوية
+Unit,وحدة
+Unpaid,غير مدفوع
+Urgent,عاجل
+Urine,بول
+Use Admit to admit the patient to a bed,استخدم تنويم لتنويم المريض على سرير
+Use this time,استخدام هذا الوقت
+Used for services that have no price in this plan's price list.,تُستخدم للخدمات التي ليس لها سعر في قائمة أسعار هذه الخطة.
+Used when you write off the part of a claim the insurer refused.,تُستخدم عند شطب جزء المطالبة الذي رفضته شركة التأمين.
+User,المستخدم
+Utilisation %,نسبة الاستخدام %
+Valid From,صالح من
+Valid To,صالح حتى
+Valid Until,ساري حتى
+Value,القيمة
+Verified,تم التحقق
+Verified By,تحقق منه
+Verified On,تاريخ التحقق
+Verify,تحقق
+Visits,الزيارات
+Vital Signs,العلامات الحيوية
+Wait Until Seen (minutes),مدة الانتظار حتى المعاينة (دقائق)
+Waiting,في الانتظار
+Waiting for Payment,في انتظار الدفع
+Waiting in Emergency,في انتظار الطوارئ
+Walk-in,بدون موعد
+Ward,عنبر
+Warehouse,المخزن
+Warn When an Admission Has No Deposit,التنبيه عند تنويم بلا دفعة مقدمة
+Wednesday,الأربعاء
+Weekly Schedule,الجدول الأسبوعي
+Weight (kg),الوزن (كجم)
+What the patient pays on covered lines never goes above this. Empty = no maximum.,ما يدفعه المريض عن السطور المغطاة لا يتجاوز هذا الحد أبدًا. إذا تُرك فارغًا فلا حد أقصى.
+Widowed,أرمل
+With Contrast,بالصبغة
+Works In,يعمل في
+Write Report,كتابة التقرير
+Write the operation notes,اكتب ملاحظات العملية
+Write-off Entry,قيد الشطب
+X-Ray,أشعة سينية
+doctor {0},الطبيب {0}
+insurer share,نصيب شركة التأمين
+patient share,نصيب المريض
+the operating room,غرفة العمليات
+{0} is not a radiology service,{0} ليست خدمة أشعة
+{0} is not a stock item,{0} ليس صنفًا مخزنيًا
+{0} is not a surgery service,{0} ليست خدمة جراحية
+{0} lines were left out because their bills are not paid in full yet.,تم استبعاد {0} سطر لأن فواتيرها لم تُسدد بالكامل بعد.
+{0} scheduled medicine doses are still open. They will be marked Missed.,لا تزال {0} جرعة دواء مجدولة مفتوحة. ستُسجل كفائتة.
+"{0} was already billed. Cancel the bill first, then return the medicine.",تمت فوترة {0} بالفعل. ألغِ الفاتورة أولًا ثم أرجع الدواء.
+{0}: more than the stock issued by the original dispense,{0}: أكثر من الكمية المصروفة في الصرف الأصلي
+{0}: only {1} can still be returned,{0}: يمكن إرجاع {1} فقط

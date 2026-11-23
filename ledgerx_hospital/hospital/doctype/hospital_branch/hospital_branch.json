@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_name",
+  "company",
+  "cost_center",
+  "cb1",
+  "warehouse",
+  "or_warehouse",
+  "price_list",
+  "active",
+  "sb2",
+  "address",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "in_list_view": 1,
+   "description": "A group can use one company per branch or one for all and a cost center per branch."
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Pharmacy Warehouse",
+   "options": "Warehouse",
+   "reqd": 1,
+   "description": "Medicines are dispensed from here."
+  },
+  {
+   "fieldname": "or_warehouse",
+   "fieldtype": "Link",
+   "label": "Operating Theatre Warehouse",
+   "options": "Warehouse",
+   "description": "Surgery consumables are issued from here. Empty = the pharmacy warehouse."
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List",
+   "description": "Overrides the cash price list for this branch."
+  },
+  {
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": 1
+  },
+  {
+   "fieldname": "sb2",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Hospital Branch",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [
+  {
+   "role": "Hospital Manager",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  },
+  {
+   "role": "Hospital Doctor",
+   "read": 1
+  },
+  {
+   "role": "Hospital Nurse",
+   "read": 1
+  },
+  {
+   "role": "Hospital Reception",
+   "read": 1
+  },
+  {
+   "role": "Hospital Lab",
+   "read": 1
+  },
+  {
+   "role": "Hospital Radiology",
+   "read": 1
+  },
+  {
+   "role": "Hospital Pharmacist",
+   "read": 1
+  },
+  {
+   "role": "Hospital Cashier",
+   "read": 1
+  },
+  {
+   "role": "Hospital Insurance",
+   "read": 1
+  }
+ ],
+ "autoname": "field:branch_name",
+ "icon": "fa fa-building",
+ "allow_rename": 0
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "urgent",
+  "lab_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Test",
+   "options": "Hospital Service",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "urgent",
+   "fieldtype": "Check",
+   "label": "Urgent",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "lab_order",
+   "fieldtype": "Link",
+   "label": "Lab Order",
+   "options": "Lab Order",
+   "read_only": 1,
+   "in_list_view": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Encounter Lab Test",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [],
+ "istable": 1,
+ "editable_grid": 1,
+ "allow_rename": 0
+}

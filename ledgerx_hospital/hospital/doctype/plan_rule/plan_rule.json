@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "creation": "2026-11-22 22:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "service_type",
+  "cover_pct",
+  "copay_fixed",
+  "line_cap",
+  "requires_approval",
+  "excluded"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Hospital Service",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "label": "Service Type",
+   "options": "\nConsultation\nProcedure\nLaboratory\nRadiology\nSurgery\nAnesthesia\nRoom\nNursing\nEmergency\nPharmacy\nPackage\nOther",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cover_pct",
+   "fieldtype": "Percent",
+   "label": "Insurer Pays %",
+   "in_list_view": 1,
+   "description": "Empty = the plan's default."
+  },
+  {
+   "fieldname": "copay_fixed",
+   "fieldtype": "Currency",
+   "label": "Patient Fixed Co-pay per Line"
+  },
+  {
+   "fieldname": "line_cap",
+   "fieldtype": "Currency",
+   "label": "Insurer Maximum per Line"
+  },
+  {
+   "fieldname": "requires_approval",
+   "fieldtype": "Check",
+   "label": "Needs Prior Approval",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "excluded",
+   "fieldtype": "Check",
+   "label": "Not Covered",
+   "in_list_view": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-11-22 22:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Plan Rule",
+ "owner": "Administrator",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "permissions": [],
+ "istable": 1,
+ "editable_grid": 1,
+ "allow_rename": 0
+}

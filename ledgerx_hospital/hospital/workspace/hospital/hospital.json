@@ -1,0 +1,742 @@
+{
+ "charts": [
+  {
+   "chart_name": "Appointments by Status",
+   "label": "Appointments by Status"
+  },
+  {
+   "chart_name": "Charges by Service Type",
+   "label": "Charges by Service Type"
+  },
+  {
+   "chart_name": "Emergency by Triage Level",
+   "label": "Emergency by Triage Level"
+  }
+ ],
+ "content": "[{\"id\": \"08fd3c6cf2\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Hospital</b></span>\", \"col\": 12}}, {\"id\": \"3fc499c8ad\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Hospital Patient\", \"col\": 3}}, {\"id\": \"2ab8481bcd\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Patient Appointment\", \"col\": 3}}, {\"id\": \"cbf3bf87cc\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Emergency Visit\", \"col\": 3}}, {\"id\": \"52aeb9da4c\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Inpatient Admission\", \"col\": 3}}, {\"id\": \"c8f91bed9f\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Appointments Today\", \"col\": 3}}, {\"id\": \"abe8972586\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Patients In Hospital\", \"col\": 3}}, {\"id\": \"9bb694faa9\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Waiting in Emergency\", \"col\": 3}}, {\"id\": \"b8f1e14b5f\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Lab Orders Pending\", \"col\": 3}}, {\"id\": \"a9858c7f27\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Radiology Pending\", \"col\": 3}}, {\"id\": \"0231c662bf\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Surgeries Today\", \"col\": 3}}, {\"id\": \"d96fabba64\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Unbilled Charges\", \"col\": 3}}, {\"id\": \"7163da6835\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Approvals Waiting\", \"col\": 3}}, {\"id\": \"3c8e0e0479\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Claims Open\", \"col\": 3}}, {\"id\": \"eaa027c00a\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Appointments by Status\", \"col\": 6}}, {\"id\": \"c7a769a257\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Charges by Service Type\", \"col\": 6}}, {\"id\": \"ee1d12b86b\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Emergency by Triage Level\", \"col\": 6}}, {\"id\": \"532f874cfb\", \"type\": \"card\", \"data\": {\"card_name\": \"Front Desk\", \"col\": 4}}, {\"id\": \"82a051e6c1\", \"type\": \"card\", \"data\": {\"card_name\": \"Clinic\", \"col\": 4}}, {\"id\": \"a10b102445\", \"type\": \"card\", \"data\": {\"card_name\": \"Inpatients\", \"col\": 4}}, {\"id\": \"4e00e88c89\", \"type\": \"card\", \"data\": {\"card_name\": \"Diagnostics\", \"col\": 4}}, {\"id\": \"d77c0a6fc4\", \"type\": \"card\", \"data\": {\"card_name\": \"Theatre and Hospital\", \"col\": 4}}, {\"id\": \"d76493e0a9\", \"type\": \"card\", \"data\": {\"card_name\": \"Billing\", \"col\": 4}}, {\"id\": \"9ac2854d0a\", \"type\": \"card\", \"data\": {\"card_name\": \"Insurance\", \"col\": 4}}, {\"id\": \"2b47df6e77\", \"type\": \"card\", \"data\": {\"card_name\": \"Doctors\", \"col\": 4}}, {\"id\": \"fa3e464685\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"22f038c669\", \"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}, {\"id\": \"0316c3dfbf\", \"type\": \"card\", \"data\": {\"card_name\": \"Source Data\", \"col\": 4}}]",
+ "creation": "2026-11-23 09:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "hospital",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "Hospital",
+ "links": [
+  {
+   "type": "Card Break",
+   "label": "Front Desk",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 3,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Patient",
+   "link_type": "DocType",
+   "link_to": "Hospital Patient",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Patient Appointment",
+   "link_type": "DocType",
+   "link_to": "Patient Appointment",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Emergency Visit",
+   "link_type": "DocType",
+   "link_to": "Emergency Visit",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Clinic",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 2,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Patient Encounter",
+   "link_type": "DocType",
+   "link_to": "Patient Encounter",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vital Signs",
+   "link_type": "DocType",
+   "link_to": "Vital Signs",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Inpatients",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 4,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Inpatient Admission",
+   "link_type": "DocType",
+   "link_to": "Inpatient Admission",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Nursing Note",
+   "link_type": "DocType",
+   "link_to": "Nursing Note",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Medication Administration",
+   "link_type": "DocType",
+   "link_to": "Medication Administration",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Bed",
+   "link_type": "DocType",
+   "link_to": "Hospital Bed",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Diagnostics",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 3,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Lab Order",
+   "link_type": "DocType",
+   "link_to": "Lab Order",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Lab Result",
+   "link_type": "DocType",
+   "link_to": "Lab Result",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Radiology Order",
+   "link_type": "DocType",
+   "link_to": "Radiology Order",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Theatre and Hospital",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 2,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Surgery Booking",
+   "link_type": "DocType",
+   "link_to": "Surgery Booking",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Medication Dispense",
+   "link_type": "DocType",
+   "link_to": "Medication Dispense",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Billing",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 2,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Charge",
+   "link_type": "DocType",
+   "link_to": "Hospital Charge",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Bill",
+   "link_type": "DocType",
+   "link_to": "Hospital Bill",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Insurance",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 4,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Insurer",
+   "link_type": "DocType",
+   "link_to": "Hospital Insurer",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Insurance Plan",
+   "link_type": "DocType",
+   "link_to": "Hospital Insurance Plan",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Insurance Approval",
+   "link_type": "DocType",
+   "link_to": "Insurance Approval",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Insurance Claim",
+   "link_type": "DocType",
+   "link_to": "Insurance Claim",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Doctors",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 2,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Doctor",
+   "link_type": "DocType",
+   "link_to": "Hospital Doctor",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Doctor Statement",
+   "link_type": "DocType",
+   "link_to": "Doctor Statement",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Reports",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 12,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Daily Census",
+   "link_type": "Report",
+   "link_to": "Daily Census",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Bed Occupancy",
+   "link_type": "Report",
+   "link_to": "Bed Occupancy",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Revenue Analysis",
+   "link_type": "Report",
+   "link_to": "Revenue Analysis",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Unbilled Charges",
+   "link_type": "Report",
+   "link_to": "Unbilled Charges",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Insurance Receivable",
+   "link_type": "Report",
+   "link_to": "Insurance Receivable",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Appointments Summary",
+   "link_type": "Report",
+   "link_to": "Appointments Summary",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Lab Turnaround",
+   "link_type": "Report",
+   "link_to": "Lab Turnaround",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Emergency Waiting Times",
+   "link_type": "Report",
+   "link_to": "Emergency Waiting Times",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Theatre Utilisation",
+   "link_type": "Report",
+   "link_to": "Theatre Utilisation",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Branch Comparison",
+   "link_type": "Report",
+   "link_to": "Branch Comparison",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Medication Dispensing",
+   "link_type": "Report",
+   "link_to": "Medication Dispensing",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Doctor Fees Due",
+   "link_type": "Report",
+   "link_to": "Doctor Fees Due",
+   "hidden": 0,
+   "is_query_report": 1,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Setup",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 8,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Settings",
+   "link_type": "DocType",
+   "link_to": "Hospital Settings",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Branch",
+   "link_type": "DocType",
+   "link_to": "Hospital Branch",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Department",
+   "link_type": "DocType",
+   "link_to": "Hospital Department",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Medical Specialty",
+   "link_type": "DocType",
+   "link_to": "Medical Specialty",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Hospital Service",
+   "link_type": "DocType",
+   "link_to": "Hospital Service",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Ward",
+   "link_type": "DocType",
+   "link_to": "Ward",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Operating Room",
+   "link_type": "DocType",
+   "link_to": "Operating Room",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Lab Test Template",
+   "link_type": "DocType",
+   "link_to": "Lab Test Template",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Source Data",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 8,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Item",
+   "link_type": "DocType",
+   "link_to": "Item",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Customer",
+   "link_type": "DocType",
+   "link_to": "Customer",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Supplier",
+   "link_type": "DocType",
+   "link_to": "Supplier",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Warehouse",
+   "link_type": "DocType",
+   "link_to": "Warehouse",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Stock Entry",
+   "link_type": "DocType",
+   "link_to": "Stock Entry",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Sales Invoice",
+   "link_type": "DocType",
+   "link_to": "Sales Invoice",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Payment Entry",
+   "link_type": "DocType",
+   "link_to": "Payment Entry",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  },
+  {
+   "type": "Link",
+   "label": "Price List",
+   "link_type": "DocType",
+   "link_to": "Price List",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "dependencies": "",
+   "only_for": ""
+  }
+ ],
+ "title": "Hospital",
+ "modified": "2026-11-23 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hospital",
+ "name": "Hospital",
+ "number_cards": [
+  {
+   "label": "Appointments Today",
+   "number_card_name": "Appointments Today"
+  },
+  {
+   "label": "Patients In Hospital",
+   "number_card_name": "Patients In Hospital"
+  },
+  {
+   "label": "Waiting in Emergency",
+   "number_card_name": "Waiting in Emergency"
+  },
+  {
+   "label": "Lab Orders Pending",
+   "number_card_name": "Lab Orders Pending"
+  },
+  {
+   "label": "Radiology Pending",
+   "number_card_name": "Radiology Pending"
+  },
+  {
+   "label": "Surgeries Today",
+   "number_card_name": "Surgeries Today"
+  },
+  {
+   "label": "Unbilled Charges",
+   "number_card_name": "Unbilled Charges"
+  },
+  {
+   "label": "Approvals Waiting",
+   "number_card_name": "Approvals Waiting"
+  },
+  {
+   "label": "Claims Open",
+   "number_card_name": "Claims Open"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 32.0,
+ "shortcuts": [
+  {
+   "label": "Hospital Patient",
+   "link_to": "Hospital Patient",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Patient Appointment",
+   "link_to": "Patient Appointment",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Emergency Visit",
+   "link_to": "Emergency Visit",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "label": "Inpatient Admission",
+   "link_to": "Inpatient Admission",
+   "type": "DocType",
+   "doc_view": "List"
+  }
+ ]
+}
