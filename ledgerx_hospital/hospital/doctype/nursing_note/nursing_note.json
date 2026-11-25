@@ -141,5 +141,6 @@
  ],
  "autoname": "format:NTE-.YYYY.-.######",
  "icon": "fa fa-pencil-square-o",
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }

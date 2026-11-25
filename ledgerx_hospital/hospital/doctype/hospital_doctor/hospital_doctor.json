@@ -243,5 +243,6 @@
  "icon": "fa fa-user-md",
  "show_title_field_in_link": 1,
  "search_fields": "specialty,mobile",
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }

@@ -855,6 +855,8 @@ def build():
 		for k in ("autoname", "title_field", "icon", "track_changes", "issingle", "istable", "show_title_field_in_link", "search_fields", "is_submittable"):
 			if k in d:
 				out[k] = d[k]
+		if not istable and "track_changes" not in d and name not in ("Room Night Lock", "Production Scan", "Class Attendance"):
+			out["track_changes"] = 1  # who changed what, when
 		if istable:
 			out["editable_grid"] = 1
 		if "autoname" not in d and not istable and not d.get("issingle"):

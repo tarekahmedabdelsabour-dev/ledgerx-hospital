@@ -162,5 +162,6 @@
  "autoname": "format:MAR-.YYYY.-.######",
  "title_field": "item_code",
  "icon": "fa fa-medkit",
- "allow_rename": 0
+ "allow_rename": 0,
+ "track_changes": 1
 }
