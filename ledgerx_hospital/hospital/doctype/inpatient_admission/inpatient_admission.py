@@ -78,8 +78,9 @@ class InpatientAdmission(Document):
 		return made
 
 	# ---------------------------------------------------------------- actions
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def transfer(self, bed):
+		self.check_permission("write")
 		frappe.has_permission("Inpatient Admission", "write", self, throw=True)
 		if self.status != "Admitted":
 			frappe.throw(_("The patient is not admitted"))
@@ -101,8 +102,9 @@ class InpatientAdmission(Document):
 		frappe.db.set_value("Hospital Bed", bed, {"status": "Occupied", "current_admission": self.name}, update_modified=False)
 		return bed
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def add_deposit(self, amount, mode_of_payment, reference_no=None):
+		self.check_permission("write")
 		frappe.has_permission("Inpatient Admission", "write", self, throw=True)
 		if self.status != "Admitted":
 			frappe.throw(_("The patient is not admitted"))
@@ -111,8 +113,9 @@ class InpatientAdmission(Document):
 		self.save()
 		return pe
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def discharge(self, discharge_type, summary=None):
+		self.check_permission("write")
 		frappe.has_permission("Inpatient Admission", "write", self, throw=True)
 		if self.status != "Admitted":
 			frappe.throw(_("The patient is not admitted"))
@@ -132,9 +135,10 @@ class InpatientAdmission(Document):
 			frappe.db.set_value("Hospital Patient", self.patient, {"status": "Deceased", "deceased_on": now}, update_modified=False)
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def cancel_admission(self):
 		"""For an admission made by mistake: only when nothing was charged or ordered except the bed days."""
+		self.check_permission("write")
 		frappe.has_permission("Inpatient Admission", "write", self, throw=True)
 		if self.status != "Admitted":
 			frappe.throw(_("The patient is not admitted"))

@@ -18,9 +18,10 @@ class DoctorStatement(Document):
 		if flt(self.deductions) and not self.deduction_note:
 			frappe.throw(_("Explain the deduction"))
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def load_rows(self):
 		"""Every submitted bill line of this doctor in the period that is not on another statement. With the 'Paid' basis only bills paid in full count."""
+		self.check_permission("write")
 		self.check_draft()
 		paid_basis = data.settings().commission_basis == "Paid"
 		rows = frappe.db.sql("""SELECT bl.name, bl.parent, bl.description, bl.amount, bl.doctor_share, b.posting_date, b.patient FROM `tabBill Line` bl
@@ -44,8 +45,9 @@ class DoctorStatement(Document):
 		if self.status != "Draft":
 			frappe.throw(_("Only a draft statement can be changed this way."))
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def approve(self):
+		self.check_permission("write")
 		frappe.has_permission("Doctor Statement", "write", self, throw=True)
 		self.check_draft()
 		if not self.rows:
@@ -65,9 +67,10 @@ class DoctorStatement(Document):
 			frappe.db.set_value("Bill Line", r.bill_line, "statement", self.name, update_modified=False)
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def create_payable(self):
 		"""A purchase invoice to the doctor's supplier account for the net amount."""
+		self.check_permission("write")
 		frappe.has_permission("Doctor Statement", "write", self, throw=True)
 		if self.status != "Approved":
 			frappe.throw(_("Approve the statement first"))
@@ -92,16 +95,18 @@ class DoctorStatement(Document):
 		self.db_set("purchase_invoice", pi.name)
 		return pi.name
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def refresh_status(self):
+		self.check_permission("write")
 		if self.status == "Approved" and self.purchase_invoice:
 			out = frappe.db.get_value("Purchase Invoice", self.purchase_invoice, ["docstatus", "outstanding_amount"], as_dict=1)
 			if out and out.docstatus == 1 and flt(out.outstanding_amount) <= 0.005:
 				self.db_set("status", "Paid")
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def cancel_statement(self):
+		self.check_permission("write")
 		frappe.has_permission("Doctor Statement", "write", self, throw=True)
 		if self.status == "Cancelled":
 			return self.status

@@ -29,16 +29,18 @@ class RadiologyOrder(Document):
 			frappe.throw(_("The order cannot go from {0} to {1}").format(_(self.status), _(to)))
 		self.status = to
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def schedule(self, at):
+		self.check_permission("write")
 		frappe.has_permission("Radiology Order", "write", self, throw=True)
 		self.move("Scheduled")
 		self.scheduled_at = at
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def perform(self, technician=None):
+		self.check_permission("write")
 		frappe.has_permission("Radiology Order", "write", self, throw=True)
 		self.move("Performed")
 		self.performed_on = now_datetime()
@@ -46,8 +48,9 @@ class RadiologyOrder(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def report(self, findings, impression, critical=0):
+		self.check_permission("write")
 		frappe.has_permission("Radiology Order", "write", self, throw=True)
 		if not (findings and impression):
 			frappe.throw(_("Enter the findings and the impression"))
@@ -60,8 +63,9 @@ class RadiologyOrder(Document):
 				_("Critical imaging finding for {0}: {1}").format(self.patient_name, self.impression))
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def verify(self):
+		self.check_permission("write")
 		frappe.has_permission("Radiology Order", "write", self, throw=True)
 		self.move("Verified")
 		self.verified_on = now_datetime()
@@ -69,8 +73,9 @@ class RadiologyOrder(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def cancel_order(self):
+		self.check_permission("write")
 		frappe.has_permission("Radiology Order", "write", self, throw=True)
 		if self.status not in ("Ordered", "Scheduled"):
 			frappe.throw(_("A performed study cannot be cancelled"))

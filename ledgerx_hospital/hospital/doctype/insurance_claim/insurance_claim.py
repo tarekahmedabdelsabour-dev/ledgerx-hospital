@@ -56,9 +56,10 @@ class InsuranceClaim(Document):
 			frappe.throw(_("Only a draft claim can be deleted"))
 		frappe.db.sql("UPDATE `tabHospital Bill` SET claim = NULL WHERE claim = %s", self.name)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def load_bills(self):
 		"""Adds every submitted bill of this insurer in the period that is not on a claim yet."""
+		self.check_permission("write")
 		self.check_draft()
 		rows = frappe.db.sql("""SELECT b.name FROM `tabHospital Bill` b INNER JOIN `tabHospital Insurance Plan` p ON p.name = b.insurance_plan
 			WHERE b.docstatus = 1 AND b.insurer_invoice IS NOT NULL AND b.insurer_invoice != '' AND IFNULL(b.claim, '') = '' AND p.insurance_company = %s
@@ -77,8 +78,9 @@ class InsuranceClaim(Document):
 		if self.status != "Draft":
 			frappe.throw(_("The claim was already sent. Only a draft can be changed this way."))
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def submit_claim(self):
+		self.check_permission("write")
 		frappe.has_permission("Insurance Claim", "write", self, throw=True)
 		self.check_draft()
 		if not self.lines:
@@ -92,9 +94,10 @@ class InsuranceClaim(Document):
 	def _open(self, ln):
 		return claims.outstanding(ln.amount, ln.paid_amount, ln.rejected_amount)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def register_payment(self, amount, mode_of_payment, reference_no=None, posting_date=None):
 		"""A payment from the insurer, spread over the claim's invoices oldest first."""
+		self.check_permission("write")
 		frappe.has_permission("Insurance Claim", "write", self, throw=True)
 		if self.status == "Draft":
 			frappe.throw(_("Send the claim first"))
@@ -125,9 +128,10 @@ class InsuranceClaim(Document):
 	def _any_branch(self):
 		return self.lines[0] and frappe.db.get_value("Hospital Bill", self.lines[0].bill, "branch")
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def reject_line(self, row, amount, reason):
 		"""Records what the insurer refused on one bill. The refused part is written off when a write-off account is set in Hospital Settings."""
+		self.check_permission("write")
 		frappe.has_permission("Insurance Claim", "write", self, throw=True)
 		ln = next((l for l in self.lines if l.name == row), None)
 		if not ln:

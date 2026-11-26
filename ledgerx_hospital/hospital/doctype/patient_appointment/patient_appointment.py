@@ -63,8 +63,9 @@ class PatientAppointment(Document):
 		if self.status == "Cancelled" and not self.cancel_reason:
 			frappe.throw(_("Enter the reason for cancelling"))
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def check_in(self):
+		self.check_permission("write")
 		frappe.has_permission("Patient Appointment", "write", self, throw=True)
 		if self.status != "Scheduled":
 			frappe.throw(_("Only a scheduled appointment can be checked in"))
@@ -88,8 +89,9 @@ class PatientAppointment(Document):
 		return charges.add_charge(self.patient, self.branch, service=service, doctor=self.doctor, source_doctype="Patient Appointment", source_name=self.name,
 			insurance_plan=self.insurance_plan, posting_date=self.appointment_date, rate_factor=factor)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def cancel_appointment(self, reason):
+		self.check_permission("write")
 		frappe.has_permission("Patient Appointment", "write", self, throw=True)
 		if self.status in ("In Consultation", "Completed"):
 			frappe.throw(_("A consultation that started cannot be cancelled"))
@@ -102,9 +104,10 @@ class PatientAppointment(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def start_encounter(self):
 		"""Opens the doctor's visit record for a checked-in patient."""
+		self.check_permission("write")
 		frappe.has_permission("Patient Encounter", "create", throw=True)
 		if self.status not in ("Checked In", "In Consultation"):
 			frappe.throw(_("Check the patient in first"))

@@ -42,8 +42,9 @@ class EmergencyVisit(Document):
 		if self.status in CLOSED:
 			frappe.throw(_("The visit is closed ({0})").format(_(self.status)))
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def set_triage(self, level, vitals=None):
+		self.check_permission("write")
 		frappe.has_permission("Emergency Visit", "write", self, throw=True)
 		self.check_open()
 		if str(level) not in ("1", "2", "3", "4", "5"):
@@ -54,8 +55,9 @@ class EmergencyVisit(Document):
 		self.save()
 		return self.triage_color
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def assign_doctor(self, doctor):
+		self.check_permission("write")
 		frappe.has_permission("Emergency Visit", "write", self, throw=True)
 		self.check_open()
 		if not frappe.db.get_value("Hospital Doctor", doctor, "active"):
@@ -68,9 +70,10 @@ class EmergencyVisit(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def link_patient(self, patient):
 		"""Attaches the registered patient to an unidentified visit and posts the visit fee."""
+		self.check_permission("write")
 		frappe.has_permission("Emergency Visit", "write", self, throw=True)
 		if self.patient:
 			frappe.throw(_("The visit already has a patient"))
@@ -79,8 +82,9 @@ class EmergencyVisit(Document):
 		self.add_fee()
 		return self.patient
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def dispose(self, status, note=None):
+		self.check_permission("write")
 		frappe.has_permission("Emergency Visit", "write", self, throw=True)
 		self.check_open()
 		if status not in ("Observation", "Discharged", "Transferred", "Deceased", "Left Without Being Seen"):
@@ -97,8 +101,9 @@ class EmergencyVisit(Document):
 			frappe.db.set_value("Hospital Patient", self.patient, {"status": "Deceased", "deceased_on": now_datetime()}, update_modified=False)
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def admit(self, bed, doctor=None):
+		self.check_permission("write")
 		frappe.has_permission("Inpatient Admission", "create", throw=True)
 		self.check_open()
 		if not self.patient:

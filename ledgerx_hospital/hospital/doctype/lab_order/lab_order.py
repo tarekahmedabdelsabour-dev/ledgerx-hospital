@@ -31,9 +31,10 @@ class LabOrder(Document):
 				t.db_set("charge", charges.add_charge(self.patient, self.branch, service=t.service, doctor=self.ordering_doctor, source_doctype="Lab Order Test", source_name=t.name,
 					admission=self.admission, encounter=self.encounter, insurance_plan=self.insurance_plan))
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def collect_sample(self, row):
 		"""Marks one test's sample as collected and opens its result sheet."""
+		self.check_permission("write")
 		frappe.has_permission("Lab Order", "write", self, throw=True)
 		t = next((x for x in self.tests if x.name == row), None)
 		if not t:
@@ -47,8 +48,9 @@ class LabOrder(Document):
 		self.db_set("status", "In Progress")
 		return lr.name
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def cancel_order(self):
+		self.check_permission("write")
 		frappe.has_permission("Lab Order", "write", self, throw=True)
 		for t in self.tests:
 			if t.status in ("Resulted", "Verified"):

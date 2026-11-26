@@ -73,8 +73,9 @@ class SurgeryBooking(Document):
 	def preop_complete(self):
 		return all(cint(r.done) for r in self.preop)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def mark_ready(self):
+		self.check_permission("write")
 		frappe.has_permission("Surgery Booking", "write", self, throw=True)
 		if self.status != "Booked":
 			frappe.throw(_("The booking is not waiting for pre-op checks"))
@@ -84,8 +85,9 @@ class SurgeryBooking(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def start(self, emergency=0):
+		self.check_permission("write")
 		frappe.has_permission("Surgery Booking", "write", self, throw=True)
 		if self.status not in ("Booked", "Pre-op Ready"):
 			frappe.throw(_("The case cannot start from status {0}").format(_(self.status)))
@@ -95,8 +97,9 @@ class SurgeryBooking(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def complete(self, operation_notes=None, complications=None):
+		self.check_permission("write")
 		frappe.has_permission("Surgery Booking", "write", self, throw=True)
 		if self.status != "In Progress":
 			frappe.throw(_("The case has not started"))
@@ -141,8 +144,9 @@ class SurgeryBooking(Document):
 			if not c.charge and flt(c.qty) > 0:
 				c.charge = charges.add_charge(item_code=c.item_code, qty=c.qty, rate=c.rate, source_doctype="Surgery Consumable", source_name="%s/%s" % (self.name, c.idx), **common)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def cancel_booking(self, reason):
+		self.check_permission("write")
 		frappe.has_permission("Surgery Booking", "write", self, throw=True)
 		if self.status not in ("Booked", "Pre-op Ready"):
 			frappe.throw(_("A case that started cannot be cancelled"))

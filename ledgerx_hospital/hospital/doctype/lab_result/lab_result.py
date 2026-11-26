@@ -78,8 +78,9 @@ class LabResult(Document):
 		order.refresh_status()
 		return order
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def mark_resulted(self):
+		self.check_permission("write")
 		frappe.has_permission("Lab Result", "write", self, throw=True)
 		if self.status != "Draft":
 			frappe.throw(_("The result was already entered"))
@@ -93,8 +94,9 @@ class LabResult(Document):
 				_("Critical lab result for {0}: {1}").format(self.patient_name, bad))
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def verify(self):
+		self.check_permission("write")
 		frappe.has_permission("Lab Result", "write", self, throw=True)
 		if self.status != "Resulted":
 			frappe.throw(_("Enter and save the result first"))

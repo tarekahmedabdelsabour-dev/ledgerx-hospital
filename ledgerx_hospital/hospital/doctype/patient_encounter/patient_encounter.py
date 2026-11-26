@@ -35,8 +35,9 @@ class PatientEncounter(Document):
 		if notes:
 			frappe.msgprint("<br>".join(notes), title=_("Check the prescription"), indicator="orange")
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def complete(self):
+		self.check_permission("write")
 		frappe.has_permission("Patient Encounter", "write", self, throw=True)
 		if self.status != "Open":
 			frappe.throw(_("The visit is not open"))
@@ -71,8 +72,9 @@ class PatientEncounter(Document):
 		for r in rows:
 			r.db_set("lab_order", lo.name)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def cancel_visit(self):
+		self.check_permission("write")
 		frappe.has_permission("Patient Encounter", "write", self, throw=True)
 		if self.status == "Completed":
 			frappe.throw(_("A completed visit cannot be cancelled"))
@@ -80,9 +82,10 @@ class PatientEncounter(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def prescription_to_dispense(self):
 		"""Values for a new Medication Dispense with the prescribed medicines that are not dispensed yet."""
+		self.check_permission("write")
 		items = [{"item_code": r.item_code, "qty": r.qty or 1, "prescription_row": r.name} for r in self.prescriptions if not cint(r.dispensed)]
 		if not items:
 			frappe.throw(_("Every prescribed medicine was already dispensed"))

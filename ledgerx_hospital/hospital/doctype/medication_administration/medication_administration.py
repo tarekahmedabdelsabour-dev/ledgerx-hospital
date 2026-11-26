@@ -28,16 +28,19 @@ class MedicationAdministration(Document):
 		self.save()
 		return self.status
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def give(self, notes=None):
+		self.check_permission("write")
 		return self._set("Given", notes)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def hold(self, reason):
+		self.check_permission("write")
 		if not reason:
 			frappe.throw(_("Enter the reason"))
 		return self._set("Held", reason)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def refuse(self, reason=None):
+		self.check_permission("write")
 		return self._set("Refused", reason)

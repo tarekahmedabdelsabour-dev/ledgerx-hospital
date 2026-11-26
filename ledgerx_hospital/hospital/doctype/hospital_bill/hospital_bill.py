@@ -23,9 +23,10 @@ class HospitalBill(Document):
 		if self.docstatus == 0:
 			self.status = "Draft"
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def load_charges(self):
 		"""Fills the bill with every unbilled charge of the patient (of this admission when one is chosen)."""
+		self.check_permission("write")
 		self.set("lines", [])
 		for c in billing.unbilled(self.patient, self.admission or None, self.branch):
 			self.append("lines", {"charge": c.name})
@@ -49,7 +50,8 @@ class HospitalBill(Document):
 		billing.unpost(self)
 		billing.refresh(self.name)
 
-	@frappe.whitelist()
+	@frappe.whitelist(methods=["POST"])
 	def receive_payment(self, amount, mode_of_payment, reference_no=None):
+		self.check_permission("write")
 		frappe.has_permission("Hospital Bill", "write", self, throw=True)
 		return billing.receive_payment(self.name, amount, mode_of_payment, reference_no)
