@@ -10,7 +10,7 @@ REPORTS = [
 	("Bed Occupancy", "Hospital Bed", ["Hospital Nurse", "Hospital Reception"]),
 	("Revenue Analysis", "Hospital Charge", ["Hospital Cashier"]),
 	("Unbilled Charges", "Hospital Charge", ["Hospital Cashier", "Hospital Reception"]),
-	("Insurance Receivable", "Hospital Bill", ["Hospital Insurance", "Hospital Cashier"]),
+	("Hospital Insurance Receivable", "Hospital Bill", ["Hospital Insurance", "Hospital Cashier"]),
 	("Appointments Summary", "Patient Appointment", ["Hospital Reception", "Hospital Doctor"]),
 	("Lab Turnaround", "Lab Order", ["Hospital Lab"]),
 	("Emergency Waiting Times", "Emergency Visit", ["Hospital Doctor", "Hospital Nurse"]),

@@ -568,7 +568,7 @@
    "parenttype": "Sidebar",
    "show_arrow": 0,
    "type": "Link",
-   "link_to": "Insurance Receivable",
+   "link_to": "Hospital Insurance Receivable",
    "link_type": "Report"
   },
   {

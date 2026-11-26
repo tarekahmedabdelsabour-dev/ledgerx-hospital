@@ -11,11 +11,11 @@
  "modified": "2026-11-23 08:00:00.000000",
  "modified_by": "Administrator",
  "module": "Hospital",
- "name": "Insurance Receivable",
+ "name": "Hospital Insurance Receivable",
  "owner": "Administrator",
  "prepared_report": 0,
  "ref_doctype": "Hospital Bill",
- "report_name": "Insurance Receivable",
+ "report_name": "Hospital Insurance Receivable",
  "report_type": "Script Report",
  "roles": [
   {

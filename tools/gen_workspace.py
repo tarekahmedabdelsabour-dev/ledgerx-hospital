@@ -44,7 +44,7 @@ GROUPS = [
 		("Hospital Doctor", "DocType", "Hospital Doctor", "stethoscope"), ("Doctor Statement", "DocType", "Doctor Statement", "wallet")]),
 	("Reports", "bar-chart-3", 0, [
 		("Daily Census", "Report", "Daily Census", "list"), ("Bed Occupancy", "Report", "Bed Occupancy", "bed"), ("Revenue Analysis", "Report", "Revenue Analysis", "bar-chart-3"),
-		("Unbilled Charges", "Report", "Unbilled Charges", "receipt"), ("Insurance Receivable", "Report", "Insurance Receivable", "banknote"),
+		("Unbilled Charges", "Report", "Unbilled Charges", "receipt"), ("Insurance Receivable", "Report", "Hospital Insurance Receivable", "banknote"),
 		("Appointments Summary", "Report", "Appointments Summary", "calendar-check"), ("Lab Turnaround", "Report", "Lab Turnaround", "timer"),
 		("Emergency Waiting Times", "Report", "Emergency Waiting Times", "siren"), ("Theatre Utilisation", "Report", "Theatre Utilisation", "scissors"),
 		("Branch Comparison", "Report", "Branch Comparison", "git-compare"), ("Medication Dispensing", "Report", "Medication Dispensing", "hospital"),
