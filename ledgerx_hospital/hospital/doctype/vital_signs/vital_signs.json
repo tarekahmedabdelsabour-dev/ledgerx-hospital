@@ -274,6 +274,6 @@
  "autoname": "format:VIT-.YYYY.-.######",
  "title_field": "patient",
  "icon": "fa fa-heartbeat",
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

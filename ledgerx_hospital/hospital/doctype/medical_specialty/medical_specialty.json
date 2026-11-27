@@ -104,6 +104,6 @@
  ],
  "autoname": "field:specialty",
  "icon": "fa fa-stethoscope",
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

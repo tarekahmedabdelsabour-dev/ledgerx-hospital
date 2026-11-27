@@ -206,6 +206,6 @@
  ],
  "autoname": "field:plan_name",
  "icon": "fa fa-id-card",
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

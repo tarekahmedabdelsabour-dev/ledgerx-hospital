@@ -125,6 +125,6 @@
  "autoname": "field:service",
  "title_field": "template_name",
  "icon": "fa fa-flask",
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

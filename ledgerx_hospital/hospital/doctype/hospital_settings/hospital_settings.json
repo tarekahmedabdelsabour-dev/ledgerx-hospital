@@ -250,6 +250,6 @@
  ],
  "icon": "fa fa-hospital-o",
  "issingle": 1,
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

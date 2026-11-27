@@ -559,7 +559,7 @@ doctype("Lab Result", [
 	f("resulted_by", "Link", "Resulted By", options="User", read_only=1),
 	f("verified_on", "Datetime", "Verified On", read_only=1),
 	f("verified_by", "Link", "Verified By", options="User", read_only=1),
-], autoname="format:LRS-.YYYY.-.#####", title_field="patient_name", icon="fa fa-file-text", perms=perms((MGR, "all"), (LAB, "all"), (DOC, "r"), (NUR, "r"), (REC, "r")), track_changes=1)
+], autoname="format:LRS-.YYYY.-.#####", title_field="patient_name", icon="fa fa-file-text", perms=perms((MGR, "all"), (LAB, "rwc"), (DOC, "r"), (NUR, "r"), (REC, "r")), track_changes=1)
 
 # ================================================================== radiology
 doctype("Radiology Order", [
@@ -781,7 +781,7 @@ doctype("Hospital Bill", [
 	f("claim", "Link", "Claim", options="Insurance Claim", read_only=1),
 	f("amended_from", "Link", "Amended From", options="Hospital Bill", read_only=1, no_copy=1, print_hide=1),
 ], autoname="format:BIL-.YYYY.-.#####", title_field="patient_name", is_submittable=1, icon="fa fa-file-text-o",
-	perms=perms((MGR, "full"), (CSH, "full"), (INS, "rw"), (DOC, "r"), (NUR, "r"), (REC, "rwc")), track_changes=1)
+	perms=perms((MGR, "full"), (CSH, "sub"), (INS, "rw"), (DOC, "r"), (NUR, "r"), (REC, "rwc")), track_changes=1)
 
 doctype("Claim Line", [
 	f("bill", "Link", "Bill", options="Hospital Bill", reqd=1, in_list_view=1),
@@ -810,7 +810,7 @@ doctype("Insurance Claim", [
 	f("paid_total", "Currency", "Paid", read_only=1),
 	f("outstanding", "Currency", "Outstanding", read_only=1, in_list_view=1),
 	f("notes", "Small Text", "Notes"),
-], autoname="format:CLM-.YYYY.-.#####", title_field="insurance_company", icon="fa fa-folder-open", perms=perms((MGR, "all"), (INS, "all"), (CSH, "rw")), track_changes=1)
+], autoname="format:CLM-.YYYY.-.#####", title_field="insurance_company", icon="fa fa-folder-open", perms=perms((MGR, "all"), (INS, "all"), (CSH, "r")), track_changes=1)
 
 doctype("Statement Row", [
 	f("bill", "Link", "Bill", options="Hospital Bill", read_only=1, in_list_view=1),

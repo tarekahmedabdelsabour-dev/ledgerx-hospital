@@ -169,6 +169,6 @@
  "autoname": "format:APR-.YYYY.-.#####",
  "title_field": "patient",
  "icon": "fa fa-check-square-o",
- "allow_rename": 0,
- "track_changes": 1
+ "track_changes": 1,
+ "allow_rename": 0
 }

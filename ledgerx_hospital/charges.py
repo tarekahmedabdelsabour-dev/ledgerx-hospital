@@ -46,6 +46,7 @@ def add_charge(patient, branch, service=None, item_code=None, qty=1, rate=None, 
 		"department": svc.department if svc else None, "doctor": doctor, "qty": qty, "rate": rate, "discount_pct": discount_pct, "source_doctype": source_doctype,
 		"source_name": source_name, "admission": admission, "encounter": encounter, "insurance_plan": plan,
 	})
+	doc.flags.system_charge = True
 	doc.insert(ignore_permissions=True)
 	return doc.name
 
